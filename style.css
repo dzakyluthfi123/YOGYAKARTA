@@ -122,22 +122,17 @@ header {
 
 
 .navbar {
-    position: fixed; /* Fixed position at the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px; /* Adjust height as needed */
-    background-color: whitesmoke; /* Transparent at the top */
-    transition: background-color 0.3s ease; /* Animation for color change */
-    z-index: 1000; /* Ensure navbar stays above other content */
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space between logo and menu */
-    padding-left: 10%; /* Add left padding to shift elements */
+    position: fixed; /* Mengatur posisi menjadi fixed */
+    top: 0; /* Menempatkan navbar di bagian atas */
+    left: 0; /* Menempatkan navbar di sisi kiri */
+    right: 0; /* Menempatkan navbar di sisi kanan */
+    z-index: 1000; /* Pastikan navbar berada di atas konten lainnya */
+    background-color: transparent; /* Latar belakang transparan */
+    transition: background-color 0.3s; /* Transisi saat warna berubah */
 }
 
 .navbar.scrolled {
-    background-color: rgba(255, 255, 255, 1); /* Solid header when scrolled */
+    background-color: rgba(255, 255, 255, 1); /* Latar belakang solid saat di-scroll */
 }
 .navbar-header {
     display: flex;
@@ -271,7 +266,16 @@ header {
 
 
 
-
+.date-box {
+    background-color: rgba(25, 42, 151, 0.6); /* Warna hitam dengan transparansi 60% */
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.img-fit {
+    object-fit: cover;
+    height: 200px;
+}
 
 
 
@@ -626,7 +630,7 @@ p {
     margin-top: 9px; /* Jarak antara judul dan garis bawah */
 }
 .blue-container {
-    background-color: #001F54; /* Dark blue background */
+    background-color: #b7bbc2; /* Dark blue background */
     padding: 20px; /* Add padding for spacing inside */
     border-radius: 8px; /* Rounded corners */
     padding: 50px 50px;
@@ -643,7 +647,7 @@ p {
 
 .judul h1 {
     font-size: 36px;
-    color: #fff; /* Customize the color */
+    color: #000000; /* Customize the color */
 }
 
 .card-container23 {
@@ -655,15 +659,36 @@ p {
 }
 
 .card23 {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Mengatur konten menjadi flex */
+    align-items: center; /* Menyejajarkan item di tengah secara vertikal */
+    margin: 10px; /* Jarak antar kartu */
+    padding: 10px; /* Padding di dalam kartu */
+    border: 1px solid #ccc; /* Garis batas untuk kartu */
+    border-radius: 20px; /* Sudut melengkung */
+    background-color: #f9f9f9; /* Warna latar belakang kartu */
+    transition: box-shadow 0.3s; /* Transisi saat hover */
 }
-.card23:hover{
+
+.card23:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
     transform: translateY(-5px);
 }
+
+.text-container {
+    margin-left: 10px; /* Jarak antara gambar dan teks */
+}
+
+.title {
+    font-weight: bold; /* Menebalkan judul */
+    text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+    color: #007bff; /* Warna judul */
+    /* margin-right: 50%; */
+}
+
+.subtitle {
+    color: grey; /* Warna subtitle */
+}
+
 .text-container .title {
     font-size: 1.2rem;
     font-weight: bold;
@@ -800,7 +825,7 @@ p {
 .section-title {
     text-align: center;
     font-size: 2rem;
-    color: #001F54;
+    color: #a2a3a5;
     margin-bottom: 30px;
     font-weight: 600;
 }
@@ -819,7 +844,7 @@ p {
 .form-control {
     width: 100%;
     padding: 10px;
-    border: 2px solid #98b2cd !important; 
+    border: 2px solid #9ca3aa !important; 
     border-radius: 5px;
     font-size: 1rem;
     color: #333;
@@ -827,7 +852,7 @@ p {
 
 .form-control:focus {
     outline: none;
-    border-color: #0056b3 !important; 
+    border-color: #bfc5cc !important; 
 }
 
 
@@ -980,4 +1005,60 @@ label {
         padding: 10px;  
         min-height: 150px;  
     }
+}
+
+
+/* ekstra */
+.white-container{
+    background-color: #fff; /* Dark blue background */
+    padding: 20px; /* Add padding for spacing inside */
+    border-radius: 8px; /* Rounded corners */
+    padding: 50px 50px;
+    text-align: center; /* Center the content */
+    border-radius: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.card24 {
+    flex: 1 1 300px; /* Membuat kartu responsif */
+    border: 1px solid #ccc; /* Garis batas untuk kartu */
+    border-radius: 5px; /* Sudut melengkung */
+    background-color: #f9f9f9; /* Warna latar belakang kartu */
+    overflow: hidden; /* Menghindari konten melampaui batas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan pada kartu */
+}
+.card24:hover{
+    transform: translateY(-5%);
+}
+
+.card24 img {
+    width: 100%; /* Memastikan gambar memenuhi lebar kartu */
+    height: 200px; /* Atur tinggi gambar untuk seragam */
+    object-fit: cover; /* Memastikan gambar terpotong secara proporsional */
+}
+
+.text-container {
+    padding: 10px; /* Ruang di dalam konten teks */
+}
+
+.title {
+    font-weight: bold; /* Menebalkan judul */
+    color: #007bff; /* Warna judul */
+}
+
+.subtitle {
+    color: grey; /* Warna subtitle */
+    font-size: 0.10rem; /* Ukuran font subtitle */
+}
+
+/* prestasi */
+.red-container{
+    background-color: #fff; /* Dark blue background */
+    padding: 20px; /* Add padding for spacing inside */
+    border-radius: 8px; /* Rounded corners */
+    padding: 50px 50px;
+    text-align: center; /* Center the content */
+    border-radius: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
 }
