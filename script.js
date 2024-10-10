@@ -18,3 +18,27 @@
             }
         });
     });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const counters = document.querySelectorAll('.count');
+    
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-to');
+                const count = +counter.innerText;
+    
+                const increment = target / 200; // Ubah 200 sesuai kecepatan yang diinginkan
+    
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCount, 1); // Ubah 1 ms sesuai kecepatan yang diinginkan
+                } else {
+                    counter.innerText = target;
+                }
+            };
+    
+            updateCount();
+        });
+    });
+    
