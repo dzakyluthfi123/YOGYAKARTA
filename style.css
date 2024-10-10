@@ -1,0 +1,875 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: relative; /* Memungkinkan penempatan elemen anak di dalamnya */
+}
+ /* button */
+/* From Uiverse.io by biswacpcode */ 
+ .tombol {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+   .tombol::before {
+    margin-left: auto;
+  }
+  
+   .tombol::after,  .tombol::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+  }
+  
+   .tombol:hover::after,  .tombol:hover::before {
+    width: 100%;
+  }
+
+.navbar {
+    position: fixed; /* Mengatur posisi menjadi fixed */
+    top: 0; /* Menempatkan navbar di bagian atas */
+    left: 0; /* Menempatkan navbar di sisi kiri */
+    right: 0; /* Menempatkan navbar di sisi kanan */
+    z-index: 1000; /* Pastikan navbar berada di atas konten lainnya */
+}
+.navbar-brand div {
+    display: flex;
+    flex-direction: column; /* Stack the text vertically */
+}
+
+.navbar-brand span {
+    font-size: 18px; /* Adjust size for main brand text */
+    font-weight: 600;
+}
+
+.navbar-brand div div {
+    font-size: 15px; /* Smaller font for subtitle */
+    font-weight: 400; /* Regular weight for the subtitle */
+    color: black; /* Customize text color */
+}
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Add space between image and text */
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+}
+
+.brand-text span {
+    font-size: 18px; /* Adjust size for main brand text */
+    font-weight: 600;
+}
+
+.brand-subtext {
+    font-size: 12px; /* Smaller font for subtitle */
+    font-weight: 400; /* Regular weight for subtitle */
+    margin-top: 1px; /* Add space between main text and subtitle */
+    color: black; /* Customize text color */
+}
+
+
+.marquee-section {
+    background-color: #a0a6ab; /* Warna latar belakang untuk marquee */
+    padding: 0; /* Set padding to 0 to reduce height */
+    height: 40px; /* Set a specific height for the marquee */
+    /* max-width: 800px; Ganti dengan lebar maksimum yang diinginkan */
+    margin: 0 auto; /* Center the marquee section */
+    overflow: hidden; /* Optional: Prevent overflow */
+    display: flex; /* Align content */
+    align-items: center; /* Center the content vertically */
+}
+
+.marquee-section marquee {
+    line-height: 30px; /* Set line height equal to the height of the section */
+}
+.marquee-text {
+    line-height: 35px; /* Match the line-height with the height you want */
+    color: white; /* Text color */
+    display: inline-block; /* Allows for vertical alignment */
+    height: 40px; /* Set a specific height */
+    vertical-align: middle; /* Center within parent */
+    text-align: center; /* Center the text */
+    /* Optional: Adjust margin if needed */
+    margin: 0; /* Remove margin if any */
+    padding: 0; /* Remove padding if any */
+}
+
+
+.social-link {
+    margin-left: 20px; /* Menambahkan spasi antara tautan */
+}
+
+
+.navbar {
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; /* Adjust height as needed */
+    background-color: whitesmoke; /* Transparent at the top */
+    transition: background-color 0.3s ease; /* Animation for color change */
+    z-index: 1000; /* Ensure navbar stays above other content */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and menu */
+    padding-left: 10%; /* Add left padding to shift elements */
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 1); /* Solid header when scrolled */
+}
+.navbar-header {
+    display: flex;
+    align-items: center; /* Memastikan logo dan tombol berada di tengah secara vertikal */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Memastikan logo berada di tengah secara vertikal */
+    margin-left: 10px; /* Menambahkan margin kiri untuk logo */
+}
+
+.logo {
+    max-width: 50px; /* Mengatur ukuran logo */
+    height: auto;
+}
+
+.navbar-toggle {
+    background: none; /* Menghilangkan background pada tombol */
+    border: none; /* Menghilangkan border pada tombol */
+    cursor: pointer; /* Pointer saat hover di tombol */
+}
+
+.collapse {
+    display: flex; /* Mengatur konten navbar untuk menampilkan flexbox */
+    align-items: center; /* Memastikan item berada di tengah secara vertikal */
+}
+
+.nav {
+    list-style: none; /* Menghilangkan bullet pada list */
+    display: flex; /* Menampilkan list secara horizontal */
+    align-items: center; /* Menyusun item secara vertikal di tengah */
+}
+
+.nav > li {
+    position: relative; /* Memungkinkan dropdown muncul di atas */
+    padding: 0 5px; /* Menghilangkan padding untuk mengurangi jarak */
+}
+
+.navbar.scrolled .nav > li > a {
+    color: black; /* Warna teks saat digulir */
+}
+
+
+.navbar-nav {
+    margin-left: 50px;
+}
+
+.dropdown-menu {
+    position: absolute; /* Memungkinkan dropdown menu muncul di atas */
+    top: 100%; /* Menempatkan dropdown di bawah item */
+    left: 0;
+    background: white; /* Warna latar dropdown */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk dropdown */
+    display: none; /* Tersembunyi secara default */
+    z-index: 999; /* Pastikan dropdown di atas konten lain */
+    min-width: 160px; /* Lebar minimum untuk dropdown */
+    border-radius: 5px; /* Sudut melingkar untuk dropdown */
+    padding: 0; /* Menghilangkan padding untuk item dropdown */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Menampilkan dropdown saat hover pada parent */
+}
+
+.dropdown-menu li {
+    padding: 0; /* Menghilangkan padding untuk item dropdown */
+    list-style: none; /* Menghilangkan bullet pada item dropdown */
+}
+
+.dropdown-menu li a {
+    color: #333; /* Warna teks item dropdown */
+    display: block; /* Memastikan item dropdown memiliki area klik penuh */
+    padding: 10px; /* Menambahkan padding untuk item dropdown */
+    transition: background-color 0.3s; /* Animasi transisi background saat hover */
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1; /* Warna latar saat hover pada item dropdown */
+    color: #007BFF; /* Warna saat hover pada item dropdown */
+}
+
+/* Untuk tampilan responsif */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding-left: 5%; /* Reduce left padding on mobile */
+        padding-right: 5%; /* Add right padding for symmetry */
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Auto height for flexible spacing */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navbar-brand {
+        margin-bottom: 1px; /* Add margin below the brand */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack nav items vertically */
+        width: 100%; /* Full width */
+        margin-left: 0; /* Reset margin on mobile */
+    }
+
+    .nav > li {
+        width: 100%; /* Full width for nav items */
+        padding: 10px 0; /* Add vertical padding for clickability */
+    }
+
+    .navbar-toggle {
+        display: block; /* Ensure toggler is visible */
+    }
+
+    .collapse {
+        display: none; /* Hide collapse menu by default */
+        width: 100%; /* Full width */
+        background-color: whitesmoke; /* Background for dropdown */
+        border-radius: 5px; /* Rounded corners */
+        padding: 10px 0; /* Add padding for dropdown */
+    }
+
+    .navbar-toggler.collapsed + .collapse {
+        display: flex; /* Show menu on toggler click */
+        flex-direction: column; /* Stack items */
+    }
+
+    .nav-link {
+        padding: 10px; /* Add padding to links */
+        text-align: left; /* Align text to the left */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.home {
+    position: relative; /* Untuk menempatkan konten pencarian relatif terhadap gambar */
+    text-align: center; /* Menyusun elemen di tengah */
+}
+
+.home img {
+    width: 100%; /* Memastikan gambar responsif */
+    /* height: auto; Menjaga aspek rasio gambar */
+    margin-bottom: -5px;
+}
+
+
+.search-container {
+    position: absolute; /* Posisi absolut untuk menempatkan di tengah gambar */
+    top: 50%; /* Mengatur posisi vertikal */
+    left: 50%; /* Mengatur posisi horizontal */
+    transform: translate(-50%, -50%); /* Menggeser posisi ke tengah */
+    display: flex; /* Mengatur elemen dalam container secara fleksibel */
+    flex-direction: column; /* Mengatur arah elemen menjadi kolom */
+    align-items: center; /* Mengatur item di tengah */
+}
+
+.search-container h1 {
+    margin-bottom: 10px; /* Jarak antara judul dan input */
+    color: white; /* Mengatur warna teks judul */
+    font-size: 50px;
+}
+
+.search-bar {
+    display: flex; /* Mengatur input dan tombol dalam baris yang sama */
+    align-items: center; /* Menyusun input dan tombol secara vertikal di tengah */
+}
+
+.search-input {
+    padding: 10px; /* Padding untuk input */
+    font-size: 16px; /* Ukuran font */
+    min-width: 800px;
+    border: 2px solid #007BFF; /* Border untuk input */
+    border-radius: 50px 0 0 50px; /* Sudut melingkar di sisi kiri */
+    outline: none; /* Menghilangkan outline default */
+    border-right: none; /* Menghilangkan border kanan untuk menyatu dengan tombol */
+    width: 250px; /* Atur lebar input sesuai kebutuhan */
+}
+
+.search-button {
+    padding: 10px 20px; /* Mengatur padding untuk memperpanjang tombol */
+    min-width: 150px; /* Mengatur lebar minimum tombol */
+    background-color: #007BFF; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 0 50px 50px 0; /* Sudut melingkar */
+    cursor: pointer; /* Pointer saat hover */
+    font-size: 16px; /* Ukuran font */
+    transition: background-color 0.3s; /* Transisi warna saat hover */
+    height: 48px; /* Sesuaikan tinggi tombol dengan input */
+    line-height: 25px;
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Warna saat hover */
+}
+@media (max-width: 768px) {
+    .search-container h1 {
+        font-size: 25px; /* Smaller title on mobile */
+    }
+
+    .search-input {
+        width: 285px; /* Full width on mobile */
+        min-width: auto; /* Remove minimum width */
+    }
+
+    .search-button {
+        min-width: auto; /* Remove minimum width on mobile */
+        width: 20%; /* Full width button on mobile */
+    }
+}
+
+/* CONTENT */
+.info-container {
+    display: flex; /* Mengatur layout menjadi flex */
+    justify-content: space-between; /* Mengatur jarak antar elemen */
+    padding: 20px; /* Menambahkan padding di sekeliling container */
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang untuk kontainer */
+    position: relative;
+    top: 60%; /* Menempatkan container di bawah gambar */
+}
+
+.pengumuman, .sambutan {
+    width: 45%; /* Mengatur lebar masing-masing kontainer */
+    padding: 10px; /* Menambahkan padding di dalam kontainer */
+    background: #ffffff; /* Warna latar belakang untuk masing-masing kontainer */
+    border-radius: 5px; /* Sudut melingkar untuk kontainer */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Bayangan untuk tampilan 3D */
+}
+.sambutan {
+    width: 50%;; /* You can adjust this width */
+    padding: 10px;
+    background-color: #ffffff; /* Optional: background color for better visibility */
+    border-radius: 10px; /* Optional: rounded corners */
+    overflow: hidden; /* Prevent content from overflowing the container */
+}
+.sambutan {
+    width: 50%;
+}
+
+.image-float {
+    float: left; /* Floats image to the left */
+    margin-right: 20px; /* Adds space between the image and the text */
+    margin-bottom: 10px;
+    max-width: 300px; /* You can adjust this based on your image size */
+    height: auto;
+}
+
+p {
+    text-align: justify; /* Justifies the paragraph text */
+}
+
+
+.sambutan h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.sambutan p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify; /* For better text alignment */
+}
+
+
+.pengumuman h2, .sambutan h2 {
+    color: #007BFF; /* Warna untuk judul */
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column; /* Menyusun konten secara vertikal di mobile */
+    }
+
+    .pengumuman, .sambutan {
+        width: 100%; /* Lebar penuh di mobile */
+        margin-bottom: 20px; /* Jarak antar kontainer */
+    }
+}
+
+.berita-section {
+    background-color: rgb(12, 12, 97); /* Blue background */
+    color: white; /* White text color */
+    padding: 50px 50px;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+
+
+
+.berita h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 38%;
+}
+
+.underline {
+    width: 100px;
+    height: 4px;
+    margin-top: 20px;
+    margin: 0 auto;
+    background-color: rgb(251, 255, 0); /* White underline color */
+    position: relative;
+}
+
+
+.news-item {
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 16px;
+}
+
+.news-item a {
+    color: red; /* Link color */
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Makes the cards wrap to the next line */
+    gap: 20px; /* Adds space between cards */
+    justify-content: flex-start; /* Aligns the cards to the left */
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 20px); /* Makes the cards take 1/3 of the container width */
+    box-sizing: border-box;
+}
+
+.img-fit {
+    width: 100%; /* Set width to 100% of the card */
+    height: 200px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    object-position: center; /* Centers the image in the allocated space */
+}
+.card {
+    position: relative; /* Untuk posisi relatif gambar */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang melampaui batas */
+}
+
+.card-img-top {
+    width: 100%; /* Mengatur lebar gambar agar sesuai dengan lebar kartu */
+    height: auto; /* Menjaga aspek rasio gambar */
+    transition: transform 0.3s ease; /* Transisi halus saat hover */
+}
+
+.card-img-top:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat di-hover */
+    cursor: pointer; /* Mengubah cursor menjadi pointer */
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* Two cards per row on tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        flex: 1 1 100%; /* One card per row on small screens */
+    }
+}
+.gray-bg {
+    background-color: whitesmoke; /* Light gray background for each card */
+}
+.card-text{
+    color: gray;
+}
+
+.buttontampilkansemuaberita {
+    display: flex; /* Menggunakan Flexbox untuk memusatkan isi */
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+    height: 100%; /* Mengatur tinggi agar tombol berada di tengah layar, bisa diubah sesuai kebutuhan */
+    margin-top: 20px;
+}
+
+.custom-button {
+    background-color: transparent; /* Warna latar belakang tombol */
+    color: orange; /* Warna teks */
+    border: 2px solid orange; /* Awalnya border transparan */
+    padding: 10px 20px; /* Ukuran tombol */
+    border-radius: 5px; /* Sudut tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah tombol */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transisi halus */
+    width: 300px; /* Atur lebar tombol di sini (bisa diubah sesuai kebutuhan) */
+    max-width: 100%; /* Mencegah tombol melewati lebar kontainer */
+}
+
+/* Efek saat tombol di-hover */
+.custom-button:hover {
+    background-color: orange; /* Tetap transparan */
+    color: white; /* Ubah warna teks menjadi oranye saat hover */
+}
+
+/* Efek saat tombol di-klik */
+.buttontampilkansemuaberita:active .custom-button {
+    background-color: transparent; /* Ubah latar belakang menjadi oranye saat di-klik */
+    color: orange; /* Ubah warna teks menjadi putih saat di-klik */
+}
+
+.pengumuman a { /* Menghilangkan garis bawah pada tautan */
+    color: rgb(12, 12, 97); /* Warna teks default */
+    transition: color 0.3s; /* Transisi halus untuk perubahan warna */
+}
+
+.pengumuman a:hover {
+    color: orange; /* Warna teks saat hover */
+}
+
+
+
+/* ekstrakurikuler */
+
+
+.header23 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.header23 h1 {
+    font-size: 2em;
+}
+.header23 .button23 {
+    background-color: #ffffff;
+    color: #2A9D8F;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.card23 h2 {
+    font-size: 1.2em;
+    color: #2A9D8F;
+    margin: 0;
+}
+.card23 p {
+    font-size: 0.9em;
+    color: #264653;
+    margin: 5px 0 0 0;
+}
+
+
+
+
+
+.header23 {
+    display: flex; /* Menggunakan Flexbox */
+    flex-direction: column; /* Mengatur elemen ke dalam kolom */
+    align-items: center; /* Menengahkan elemen secara horizontal */
+    text-align: center; /* Menengahkan teks */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.underline {
+    width: 20%; /* Atur lebar garis bawah */
+    height: 2px; /* Atur tinggi garis bawah */
+    background-color: rgb(255, 251, 20); /* Ganti warna sesuai kebutuhan */
+    margin-top: 10px; /* Jarak antara judul dan garis bawah */
+}
+.blue-container {
+    background-color: #001F54; /* Dark blue background */
+    padding: 20px; /* Add padding for spacing inside */
+    border-radius: 8px; /* Rounded corners */
+    padding: 50px 50px;
+    text-align: center; /* Center the content */
+    border-radius: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.judul {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Add space between the title and the cards */
+}
+
+.judul h1 {
+    font-size: 2rem;
+    color: #333; /* Customize the color */
+}
+
+.card-container23 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 10px; /* space between cards */
+    /* padding: 20px; */
+   
+}
+
+.card23 {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.text-container .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-container .subtitle {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 1024px) {
+    .card-container23 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+@media (max-width: 768px) {
+    .card-container23 {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+}
+.card23 img {
+    margin-right: 10px; /* Space between the image and text */
+}
+
+.text-container {
+    display: flex; 
+    flex-direction: column; /* Stack title and subtitle vertically */
+}
+
+.title {
+    font-weight: bold; /* Make the title bold */
+    text-decoration: none; /* Remove underline from the link */
+    color: black; /* Set title color */
+}
+
+.subtitle {
+    color: red; /* Subtitle color */
+    margin: 0; /* Remove default margin */
+}
+
+
+.container23 {
+    background-image: url('assets/image/Group-18275.jpg'); /* Ganti dengan URL gambar Anda */
+    background-size: cover; /* Mengatur agar gambar memenuhi area */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    padding: 10px; /* Jarak di dalam container */
+    color: white; /* Mengatur warna teks, jika perlu */
+    width: 98%; /* Set the width to 50% of the page */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center the content inside the container */
+    border-radius: 1%;
+}
+
+
+
+/* kontak */
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #001F54;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.map, .contact-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map h3, .contact-info h3 {
+    font-size: 1.5rem;
+    color: #001F54;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-info .contact-item .icon {
+    font-size: 1.5rem;
+    color: #f39c12;
+    margin-right: 10px;
+}
+
+.contact-info .contact-item h4 {
+    font-size: 1rem;
+    color: #001F54;
+    margin-bottom: 5px;
+}
+
+.contact-info .contact-item p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* kotaksaran */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #001F54;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.suggestion-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #98b2cd !important; 
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #0056b3 !important; 
+}
+
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+textarea.form-control {
+    height: 150px;
+    resize: none;
+}
+
+.submit-btn {
+    display: inline-block;
+    width: 100%;
+    background-color: #001F54;
+    color: #fff;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+}
+
+.submit-btn:hover {
+    background-color: #003366;
+}
+
+.send-icon {
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+    }
+}
