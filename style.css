@@ -980,32 +980,6 @@ label {
 
 
 
-/* footer */
-.pink-container {
-    background-color: #001F54;  
-    min-height: 250px;  
-    padding: 20px;  
-    display: flex; 
-    flex-direction: column;  
-    justify-content: center; 
-    align-items: center;  
-    box-sizing: border-box; 
-}
-
-
-@media (max-width: 768px) {
-    .pink-container {
-        padding: 15px;  
-        min-height: 200px;  
-    }
-}
-
-@media (max-width: 480px) {
-    .pink-container {
-        padding: 10px;  
-        min-height: 150px;  
-    }
-}
 
 
 /* ekstra */
@@ -1061,4 +1035,79 @@ label {
     border-radius: 10px;
     margin-right: 1%;
     margin-left: 1%;
+}
+
+/* footer */
+/* General footer styles */
+
+
+
+
+
+.card-slider-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.card-slider {
+    display: flex;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.card-item {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card-item p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Menambahkan efek saat hover */
+.card-item:hover {
+    transform: scale(1.05);
+}
+
+/* Styling tombol navigasi kiri/kanan */
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider-button.left {
+    left: 10px;
+}
+
+.slider-button.right {
+    right: 10px;
 }

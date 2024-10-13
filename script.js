@@ -42,3 +42,31 @@
         });
     });
     
+
+
+let currentSlide = 0;
+const slides = document.querySelector('.slide-content');
+const cardWrapper = document.querySelectorAll('.card-wrapper');
+const totalSlides = cardWrapper.length;
+
+function moveSlide(direction) {
+    currentSlide += direction;
+    if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    } else if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    }
+    updateSlidePosition();
+}
+
+function updateSlidePosition() {
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+// Automatic slide change every 4 seconds
+setInterval(() => {
+    moveSlide(1);
+}, 4000);
+
+
+
