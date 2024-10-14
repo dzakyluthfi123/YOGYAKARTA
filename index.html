@@ -794,38 +794,118 @@ setInterval(() => {
     color: #ffffff;
 }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .footer-left, .footer-middle, .footer-right {
-                width: 100%;
-                text-align: center;
-            }
+       /* Responsive Design */
+@media (max-width: 768px) {
+    .footer-left, .footer-middle, .footer-right {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0; /* Tambahkan ruang antar bagian */
+    }
 
-            .footer-middle ul, .footer-right ul {
-                text-align: center;
-            }
-
-            .footer-right .social-icons {
-                justify-content: center;
-            }
-            .footer-bottom {
-        flex-direction: column; /* Supaya teks dan ikon tersusun vertikal di layar kecil */
+    .footer-middle ul, .footer-right ul {
+        list-style: none; /* Hilangkan bullet points untuk tampilan yang lebih bersih */
+        padding: 0;
+        margin: 0;
         text-align: center;
     }
 
-    .social-icons {
+    .footer-middle li, .footer-right li {
+        margin: 10px 0; /* Tambahkan margin untuk ruang antar item */
+    }
+
+    .footer-right .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px; /* Beri jarak antar ikon */
+        margin-top: 15px; /* Tambahkan jarak dengan bagian atas */
+    }
+
+    .footer-right .social-icons a {
+        color: #fff; /* Warna ikon */
+        background-color: #333; /* Latar belakang lingkaran ikon */
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; /* Buat ikon menjadi lingkaran */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease; /* Animasi transisi */
+    }
+
+    .footer-right .social-icons a:hover {
+        background-color: #555; /* Warna latar belakang ikon saat di-hover */
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px; /* Tambahkan ruang antara footer bottom dengan elemen lainnya */
+    }
+
+    .footer-bottom p {
+        margin: 10px 0; /* Atur margin agar teks tidak terlalu rapat */
+        font-size: 14px; /* Sesuaikan ukuran teks untuk layar kecil */
+        color: #bbb; /* Warna teks yang lebih lembut */
+    }
+
+    .footer-bottom .social-icons {
         margin-top: 10px; /* Jarak antara teks dan ikon di layar kecil */
     }
-        }
+}
+.footer-left {
+    display: flex;
+    align-items: flex-start; /* Pastikan elemen sejajar di bagian atas */
+    gap: 15px; /* Jarak antara logo dan teks */
+}
+
+.footer-left img.footer-logo {
+    width: 80px; /* Sesuaikan lebar logo */
+    height: auto; /* Pertahankan aspek rasio */
+    display: block; /* Pastikan gambar sebagai elemen block untuk layout yang lebih baik */
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column; /* Agar teks tersusun vertikal */
+    justify-content: center; /* Buat teks di tengah bagian vertikal */
+}
+
+.footer-text h2 {
+    margin: 0;
+    font-size: 20px; /* Sesuaikan ukuran teks */
+}
+
+.footer-text p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.footer-text .description {
+    margin-top: 15px; /* Jarak atas agar lebih jauh dari teks di atas */
+    padding-right:  50px; /* Menjorokkan paragraf ini ke dalam */
+}
+
+
+
+
+
     </style>
     <footer>
         <div class="footer-container">
             <div class="footer-left">
                 <img src="assets/image/smkn 1 slawi.png" alt="Logo SMK" class="footer-logo">
-                <h2>SMK NEGERI 1 SLAWI</h2>
-                <p>Prestasi Adalah Tradisi</p>
-                <p>SMK Negeri 1 Slawi merupakan sekolah rintisan berstandar internasional yang terletak di kota Slawi, kec. Slawi, kab. Tegal, Jawa Tengah. SMKN 1 Slawi mempunyai 6 jurusan.</p>
+                <div class="footer-text">
+                    <h2>SMK NEGERI 1 SLAWI</h2>
+                    <p>Prestasi Adalah Tradisi</p>
+                    <p class="description">SMK Negeri 1 Slawi merupakan sekolah 
+                        rintisan berstandar internasional yang 
+                        terletak di kota Slawi kec. Slawi kab. Tegal, 
+                        Jawa Tengah. SMKN 1 Slawi mempunyai 
+                        6 jurusan.</p>
+                </div>
             </div>
+            
+            
     
             <div class="footer-middle">
                 <h3>PROFIL</h3>
@@ -856,7 +936,7 @@ setInterval(() => {
         <div class="footer-bottom">
             <p>&copy; 2024 SMK NEGERI 1 SLAWI. All Rights Reserved.</p>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-youtube" ></i></a>
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-telegram"></i></a>
