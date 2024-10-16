@@ -189,7 +189,7 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk dropdown */
     display: none; /* Tersembunyi secara default */
     z-index: 999; /* Pastikan dropdown di atas konten lain */
-    min-width: 160px; /* Lebar minimum untuk dropdown */
+    min-width: 5px; /* Lebar minimum untuk dropdown */
     border-radius: 5px; /* Sudut melingkar untuk dropdown */
     padding: 0; /* Menghilangkan padding untuk item dropdown */
 }
@@ -206,7 +206,7 @@ header {
 .dropdown-menu li a {
     color: #333; /* Warna teks item dropdown */
     display: block; /* Memastikan item dropdown memiliki area klik penuh */
-    padding: 10px; /* Menambahkan padding untuk item dropdown */
+    padding: 2px; /* Menambahkan padding untuk item dropdown */
     transition: background-color 0.3s; /* Animasi transisi background saat hover */
 }
 
@@ -1316,8 +1316,8 @@ label {
     display: flex; /* Menggunakan Flexbox */
     justify-content: center; /* Memusatkan konten secara horizontal */
     background-color: #f0f0f0; /* Warna latar belakang abu-abu */
-    padding: 20px; /* Memberikan ruang di dalam kontainer */
-    border-radius: 5px; /* Opsional: sudut melengkung */
+    padding: 6px; /* Memberikan ruang di dalam kontainer */
+    /* border-radius: 5px; Opsional: sudut melengkung */
     width: fit-content; /* Mengatur lebar berdasarkan konten */
     margin: 20px auto; /* Memusatkan kontainer di tengah halaman */
 }
