@@ -99,7 +99,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="ekstrakurikulerDropdown">
                                 <li><a class="dropdown-item" href="paskibra.html">Paskibra</a></li>
-                                <li><a class="dropdown-item" href="#">Pks</a></li>
+                                <li><a class="dropdown-item" href="pks.html">Pks</a></li>
                                 <li><a class="dropdown-item" href="pramuka.html">Pramuka</a></li>
                                 <li><a class="dropdown-item" href="rohis.html">Rohis</a></li>
                                 <li><a class="dropdown-item" href="pmr.html">Pmr</a></li>
@@ -145,44 +145,90 @@
         <h4 class="home" style="font-size: 20px; margin-top: 4px;">Home</h4>
         <i class="fa fa-angle-right icon" style="font-size: 20px;"></i>
         <i class="fa fa-angle-right icon" style="font-size: 20px;"></i>
-        <h4 style="margin-left: 1%; font-size: 20px; margin-top: 4px;">Ekstrakurikuler</h4>
+        <h4 style="margin-left: 1%; font-size: 20px; margin-top: 4px;">Berita</h4>
     </div>
-    <br>
-    <div class="imagepmr">
-        <img src="assets/image/pks1.jpg" alt="pmr" class="pmr-img" width="45%" height="30%" style="margin-left: 28%;">
-    </div>
-    <br>
-    <div class="judulsambutan">
-        <h2>Polisi Keamanan Sekolah</h2>
-        <div class="underline"></div>
-    </div>
-    <br>
-    <div class="isisambutan">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat ipsa dignissimos beatae, molestias officia dolorum nihil accusantium.
-             Cupiditate quia officia sit ea nam aut praesentium obcaecati necessitatibus maiores tempora.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat ipsa dignissimos beatae, molestias officia dolorum nihil accusantium.
-             Cupiditate quia officia sit ea nam aut praesentium obcaecati necessitatibus maiores tempora.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat ipsa dignissimos beatae, molestias officia dolorum nihil accusantium.
-             Cupiditate quia officia sit ea nam aut praesentium obcaecati necessitatibus maiores tempora.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat ipsa dignissimos beatae, molestias officia dolorum nihil accusantium.
-             Cupiditate quia officia sit ea nam aut praesentium obcaecati necessitatibus maiores tempora.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat ipsa dignissimos beatae, molestias officia dolorum nihil accusantium.
-             Cupiditate quia officia sit ea nam aut praesentium obcaecati necessitatibus maiores tempora.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat ipsa dignissimos beatae, molestias officia dolorum nihil accusantium.
-             Cupiditate quia officia sit ea nam aut praesentium obcaecati necessitatibus maiores tempora.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat ipsa dignissimos beatae, molestias officia dolorum nihil accusantium.
-             Cupiditate quia officia sit ea nam aut praesentium obcaecati necessitatibus maiores tempora.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat ipsa dignissimos beatae, molestias officia dolorum nihil accusantium.
-             Cupiditate quia officia sit ea nam aut praesentium obcaecati necessitatibus maiores tempora.</p>
-    </div>
-    <br>
-    <div class="containersambutankepalasekolah">
-        <h4 style="margin-left: 1%; font-size: 20px; margin-top: 4px;">Di Bimbing Oleh:</h4>
-    </div>
-    <br>
-    <br>
     <br>
     
+    <div class="containerberita">
+        <!-- Sisi Kiri: Search, Category, Archive -->
+        <div class="left-columnberita">
+            <!-- Search Box -->
+            <div class="containersearchberita">
+                <h3>Search</h3>
+                <br>
+                <div class="search-boxberita">
+                    <input type="text" id="search-input" placeholder="Cari...">
+                    <button type="button" onclick="search()">Search</button>
+                </div>
+            </div>
+
+            <!-- Category -->
+            <div class="containercategoryberita">
+                <h3>Category</h3>
+                <br>
+                <div class="bg">
+                    <ul>
+                        <li>Category 1</li>
+                        <li>Category 2</li>
+                        <li>Category 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Archive -->
+            <div class="containerarchiveberita">
+                <h3>Archive</h3>
+                <br>
+                <div class="bgarchiveberita">
+                    <ul>
+                        <li>Archive 1</li>
+                        <li>Archive 2</li>
+                        <li>Archive 3</li>
+                        <li>Archive 4</li>
+                        <li>Archive 5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sisi Kanan: Berita -->
+        <div class="right-columnberita">
+            <h3 style="color: black;">Latest News</h3>
+            <br>
+            <div class="news-itemberita">
+                <img src="assets/image/jurnalistik.jpg" alt="" class="news-image"style="width: 50%; height: 50%;">
+                <h4>JUDUL BERITA</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Libero ea veritatis fugiat natus cum. Explicabo, inventore, dolorem ratione necessitatibus quisquam praesentium tempora odio repudiandae voluptatem molestias ipsam ab adipisci nulla.</p>
+            </div>
+            <div class="news-itemberita">
+                <img src="assets/image/jurnalistik.jpg" alt="" class="news-image"style="width: 50%; height: 50%;">
+                <h4>JUDUL BERITA</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Libero ea veritatis fugiat natus cum. Explicabo, inventore, dolorem ratione necessitatibus quisquam praesentium tempora odio repudiandae voluptatem molestias ipsam ab adipisci nulla.</p>
+            </div>
+            <div class="news-itemberita">
+                <img src="assets/image/jurnalistik.jpg" alt="" class="news-image" style="width: 50%; height: 50%;">
+                <h4>JUDUL BERITA</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Libero ea veritatis fugiat natus cum. Explicabo, inventore, dolorem ratione necessitatibus quisquam praesentium tempora odio repudiandae voluptatem molestias ipsam ab adipisci nulla.</p>
+            </div>
+            <div class="news-itemberita">
+                <img src="assets/image/jurnalistik.jpg" alt="" class="news-image"style="width: 50%; height: 50%;">
+                <h4>JUDUL BERITA</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Libero ea veritatis fugiat natus cum. Explicabo, inventore, dolorem ratione necessitatibus quisquam praesentium tempora odio repudiandae voluptatem molestias ipsam ab adipisci nulla.</p>
+            </div>
+            <div class="news-itemberita">
+                <img src="assets/image/jurnalistik.jpg" alt="" class="news-image"style="width: 50%; height: 50%;">
+                <h4>JUDUL BERITA</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Libero ea veritatis fugiat natus cum. Explicabo, inventore, dolorem ratione necessitatibus quisquam praesentium tempora odio repudiandae voluptatem molestias ipsam ab adipisci nulla.</p>
+            </div>
+        </div>
+        
+        
+    </div>
 
 
 

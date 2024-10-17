@@ -93,6 +93,7 @@ header {
     background-color: #a0a6ab; /* Warna latar belakang untuk marquee */
     padding: 0; /* Set padding to 0 to reduce height */
     height: 40px; /* Set a specific height for the marquee */
+    width: 100%;
     /* max-width: 800px; Ganti dengan lebar maksimum yang diinginkan */
     margin: 0 auto; /* Center the marquee section */
     overflow: hidden; /* Optional: Prevent overflow */
@@ -1742,3 +1743,234 @@ tr:hover {
 
 
 /* berita */
+
+.containerberita {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 2%;
+}
+
+.left-columnberita {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.right-columnberita {
+    width: 65%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.containersearchberita, .containercategoryberita, .containerarchiveberita {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-left: 5%;
+}
+
+.search-boxberita {
+    margin-left: 5%;
+}
+
+.search-boxberita input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-boxberita button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bg, .bgarchiveberita {
+    background-color: grey;
+    width: 80%;
+    margin-left: 5%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    color: white;
+}
+
+.right-columnberita .news-itemberita {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 50%;
+}
+
+.right-columnberita .news-itemberita h4 {
+    margin-top: 0;
+}
+
+.right-columnberita .news-itemberita p {
+    margin: 0;
+}
+.right-columnberita {
+    width: 65%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    /* Membuat kontainer berita bisa di-scroll */
+    height: 800px; /* Tinggi tetap untuk kontainer berita */
+    overflow-y: auto; /* Mengaktifkan scrolling vertikal */
+}
+
+.right-columnberita h3 {
+    margin-top: 0;
+}
+
+.news-itemberita p {
+    margin: 0;
+}
+
+
+.right-columnberita {
+    width: 65%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    height: 750px; /* Atur tinggi sesuai kebutuhan */
+    overflow-y: auto; /* Mengaktifkan scroll jika konten melebihi tinggi */
+}
+
+.news-itemberita {
+    background-color: white; /* Warna latar belakang card */
+    padding: 15px; /* Ruang dalam card */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Jarak antar card */
+    height: 50%;
+}
+
+.news-itemberita h4 {
+    margin: 10px 0 5px; /* Margin atas dan bawah untuk judul */
+    margin-left: 36%;
+    padding: 2%;
+}
+
+.news-image {
+    width: 100%; /* Mengatur lebar gambar menjadi 100% dari card */
+    height: 40%; /* Mengatur tinggi otomatis agar proporsional */
+    /* border: 5px solid grey; Border untuk gambar */
+    display: block; /* Memastikan gambar tampil sebagai blok */
+    margin: 0 auto; /* Memusatkan gambar */
+}
+
+
+
+
+.custom-button {
+    background-color: orange; /* Ganti dengan warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghapus border default */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    text-align: center; /* Memusatkan teks */
+    text-decoration: none; /* Menghapus garis bawah pada teks */
+    display: inline-block; /* Membuat tombol inline */
+    cursor: pointer; /* Menampilkan kursor pointer saat hover */
+}
+
+.custom-button a {
+    color: white; /* Warna teks tautan sesuai warna tombol */
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    font-weight: bold; /* Membuat teks lebih tebal, jika diinginkan */
+}
+
+.custom-button:hover {
+    background-color: #45a049; /* Ganti warna latar belakang saat hover */
+}
+
+
+
+/* RESPONSIVE */
+
+.containerberita {
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan elemen membungkus ke baris baru */
+    margin: 20px; /* Margin di luar container */
+}
+
+/* Kolom Kiri */
+.left-columnberita {
+    flex: 1 1 300px; /* Elemen ini akan memiliki lebar minimal 300px dan tumbuh */
+    padding: 20px; /* Ruang dalam untuk sisi kiri */
+    margin-right: 20px; /* Jarak antara kolom kiri dan kanan */
+}
+
+/* Kolom Kanan */
+.right-columnberita {
+    flex: 2 1 300px; /* Elemen ini akan memiliki lebar minimal 600px dan tumbuh lebih banyak */
+    padding: 20px; /* Ruang dalam untuk sisi kanan */
+}
+
+/* Styling untuk berita item */
+.news-itemberita {
+    margin-bottom: 20px; /* Jarak antar item berita */
+    background-color: white; /* Warna latar belakang item berita */
+    padding: 15px; /* Ruang dalam untuk item berita */
+    border-radius: 5px; /* Sudut membulat */
+}
+
+.news-image {
+    width: 100%; /* Gambar akan mengisi lebar penuh dari kontainer */
+    height: auto; /* Tinggi otomatis agar proporsional */
+    /* border: 5px solid grey; Border untuk gambar */
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+    .containerberita {
+        flex-direction: row-reverse; 
+        margin: 0; /* Menghapus margin luar untuk tampilan mobile */
+    }
+
+    .left-columnberita {
+        /* margin-right: 0; Menghapus margin kanan pada layar kecil */
+        margin-bottom: 20px; /* Jarak bawah untuk elemen kiri */
+        padding: 10px; /* Mengurangi padding untuk tampilan mobile */
+    }
+
+    .right-columnberita {
+        margin-right: 0; /* Menghapus margin kanan pada layar kecil */
+        padding: 10px; /* Mengurangi padding untuk tampilan mobile */
+    }
+
+    .news-itemberita {
+        padding: 10px; /* Mengurangi padding item berita untuk tampilan mobile */
+    }
+
+    h3 {
+        font-size: 1.4em; /* Ukuran font judul lebih kecil untuk tampilan mobile */
+    }
+
+    h4 {
+        font-size: 5px; /* Ukuran font judul berita lebih kecil untuk tampilan mobile */
+        margin-left: 5%;
+    }
+
+    p {
+        font-size: 0.9em; /* Ukuran font deskripsi lebih kecil untuk tampilan mobile */
+    }
+}
