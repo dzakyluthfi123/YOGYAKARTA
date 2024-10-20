@@ -1985,3 +1985,664 @@ ul li {
         font-size: 0.9em; /* Ukuran font deskripsi lebih kecil untuk tampilan mobile */
     }
 }
+
+/* ekstra */
+
+
+.doctores_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.doctores_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 60px;
+}
+
+.doctores_box {
+    width: 100%;
+    float: left;
+    background-color: #525151;
+    height: auto;
+    padding: 0px 10px 20px 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+/* .image_1 {
+    width: 200%;
+    float: left;
+    top: -50px;
+    position: relative;
+    border-radius: 2%;
+} */
+.doctores_box .image_1 img {
+    width: 100%; /* Make sure all images take up full width of the container */
+    height: 200px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensures that the image maintains its aspect ratio */
+    border-radius: 2%; /* Apply the border radius */
+  }
+
+.humour_text {
+    width: 100%;
+    font-size: 26px;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    padding: 0px;
+    line-height: 30px;
+}
+
+.mbbs_text {
+    font-size: 18px;
+}
+
+.social_icon {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social_icon ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.social_icon li {
+    float: left;
+}
+
+.social_icon li a {
+    float: left;
+    padding: 0px 10px;
+    color: #000;
+    font-size: 22px;
+    width: auto;
+}
+
+.social_icon li a:hover {
+    color: #0cb7d6;
+}
+
+.doctores_box {
+    position: relative;
+    padding-top: 60px; /* Add space for the image */
+    text-align: center;
+    background-color: #eceaea; /* Background for the card */
+    /* border-radius: 10px; Rounded corners for the card */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Light shadow for the card */
+    padding-bottom: 20px;
+  }
+  
+  .doctores_box .image_1 {
+    position: absolute;
+    top: -40px; /* Position the image to appear above the card */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Set fixed width for the image */
+    height: 60%; /* Set fixed height for the image */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+  }
+  
+  .doctores_box .image_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the container properly */
+    border-radius: 2%; /* Set border-radius for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow to the image */
+  }
+  
+  .humour_text {
+    margin-top: 75px; /* Add margin-top to create space between the image and text */
+  }
+  
+  .social_icon ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Spacing above social icons */
+  }
+  
+  .mbbs_text {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .social_icon ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Spacing above social icons */
+  }
+  
+  .social_icon ul li {
+    margin: 0 5px;
+  }
+  
+  .social_icon ul li a {
+    color: #555;
+    font-size: 18px;
+  }
+
+#my_slider a.carousel-control-prev {
+    left: -90px;
+    top: 170px;
+}
+
+#my_slider a.carousel-control-next {
+    right: -90px;
+    top: 170px;
+}
+
+#my_slider .carousel-control-next,
+#my_slider .carousel-control-prev {
+    width: 55px;
+    height: 55px;
+    opacity: 1;
+    font-size: 30px;
+    color: #0cb7d6;
+    background-color: #1a1919;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#my_slider .carousel-control-next:focus,
+#my_slider .carousel-control-next:hover,
+#my_slider .carousel-control-prev:focus,
+#my_slider .carousel-control-prev:hover {
+    color: #ffffff;
+    background-color: #0cb7d6;
+}
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-search {
+        padding: 15px 0px;
+    }
+}
+
+
+/*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+    .logo {
+        text-align: center;
+    }
+    .cart-content-right {
+        padding-bottom: 5px;
+    }
+    .mg {
+        margin: 0px 0px;
+    }
+    .menu-area-main {
+        height: 256px;
+        overflow-y: auto;
+    }
+    .megamenu>.row [class*="col-"] {
+        padding: 0px;
+    }
+    .menu-area-main .megamenu .men-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .women-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .el-cat {
+        padding: 0px 15px;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        height: 19px;
+    }
+    .category-box.women-box {
+        display: none;
+    }
+    .cart-box {
+        display: inline-block;
+        margin: 0px 30px;
+    }
+    .wish-box {
+        float: none;
+        margin: 0px 30px;
+        display: inline-block;
+    }
+    .menu-add {
+        display: none;
+    }
+    .category-box {
+        display: none;
+    }
+    .mean-container .mean-nav ul li ol {
+        padding: 0px;
+    }
+    .mean-container .mean-nav ul li a {
+        padding: 10px 20px;
+        width: 94.8%;
+    }
+    .mean-container .mean-nav ul li li a {
+        width: 92%;
+        padding: 1em 4%;
+    }
+    .mean-container .mean-nav ul li li li a {
+        width: 100%;
+    }
+    .header-search {
+        padding: 15px 0px;
+    }
+    #collapseFilter.d-md-block {
+        padding: 30px 0px;
+    }
+}
+
+
+/*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+    .cart-content-right {
+        padding-bottom: 5px;
+    }
+    .megamenu>.row [class*="col-"] {
+        padding: 0px;
+    }
+    .menu-area-main .megamenu .men-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .women-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .el-cat {
+        padding: 0px 15px;
+    }
+    .mean-container .mean-nav ul li a {
+        padding: 1em 4%;
+        width: 92%;
+    }
+    .mean-container .mean-nav ul li li a {
+        width: 90%;
+        padding: 1em 5%;
+    }
+    .mean-container .sub-full.megamenu-categories ol li a {
+        padding: 5px 0px;
+        text-transform: capitalize;
+        width: 100%;
+    }
+    .megamenu .sub-full.megamenu-categories .women-box .banner-up-text a {
+        width: auto;
+        border: none;
+        float: none;
+    }
+    .menu-area-main {
+        height: 45px;
+        overflow-y: auto;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        top: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header_section {
+        background-size: 100% 100%;
+    }
+    .custom_menu li a {
+        padding: 7px 12px 7px 12px;
+        margin: 0px;
+    }
+    .custom_menu {
+        width: 74%;
+        padding: 15px 0px 15px 0px;
+    }
+    .about_taital {
+        padding-top: 0px;
+    }
+    .about_text {
+        padding-top: 10px;
+    }
+    .about_bt {
+        padding-top: 40px;
+    }
+    .care_text {
+        font-size: 20px;
+    }
+    .treatment_text_1 {
+        width: 73%;
+    }
+    .doctores_section {
+        padding: 60px 0px 120px 0px;
+    }
+    #my_slider a.carousel-control-prev {
+        left: 0px;
+        top: 170px;
+    }
+    #my_slider a.carousel-control-next {
+        right: 0px;
+        top: 170px;
+    }
+    .contact_taital {
+        padding-left: 15px;
+    }
+    .mail_section_1 {
+        padding-left: 15px;
+    }
+    .footer_taital {
+        font-size: 20px;
+    }
+    .padding_15 {
+        padding-left: 10px;
+    }
+    .location_main li {
+        font-size: 14px;
+    }
+    .footer_menu li {
+        font-size: 14px;
+    }
+    .ipsum_text {
+        font-size: 14px;
+    }
+    .dryfood_text {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header_section {
+        background-size: 100% 100%;
+    }
+    .navbar-expand-lg {
+        padding: 15px 0px;
+    }
+    .navbar-brand {
+        width: auto;
+        padding: 0px;
+    }
+    .navbar {
+        padding: 10px 0px;
+    }
+    .navbar-toggler {
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+    .custom_bg {
+        display: none;
+    }
+    span.current {
+        font-size: 14px;
+    }
+    .input-group>.custom-select:not(:last-child),
+    \ .input-group>.form-control:not(:last-child) {
+        font-size: 14px;
+    }
+    .about_taital {
+        padding-top: 0;
+    }
+    .about_text {
+        font-size: 14px;
+        padding-top: 0px;
+    }
+    .about_bt {
+        padding-top: 20px;
+    }
+    .about_img img {
+        height: 280px;
+    }
+    #my_slider a.carousel-control-prev {
+        left: -39px;
+        top: 170px;
+    }
+    #my_slider a.carousel-control-next {
+        right: -39px;
+        top: 170px;
+    }
+    .contact_taital {
+        padding-left: 15px;
+    }
+    .mail_section_1 {
+        padding-left: 15px;
+    }
+    .footer_taital {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .header_section {
+        background-size: 100% 100%;
+    }
+    .navbar-expand-lg {
+        padding: 15px 0px;
+    }
+    .navbar-brand {
+        width: auto;
+        padding: 0px;
+    }
+    .navbar {
+        padding: 10px 0px;
+    }
+    .navbar-toggler {
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+    .navbar-nav.ml-auto {
+        display: block;
+    }
+    .header_top_section {
+        display: none;
+    }
+    .search_btn {
+        display: none;
+    }
+    .custom_menu li a {
+        display: none;
+    }
+    .banner_taital {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .banner_text {
+        width: 100%;
+    }
+    .appointment_box {
+        padding: 40px 20px;
+        top: -100px;
+    }
+    .appointment_taital {
+        font-size: 24px;
+    }
+    p.doctorname_text {
+        padding-top: 20px;
+    }
+    .about_taital {
+        font-size: 30px;
+        padding-top: 0;
+    }
+    .about_img img {
+        width: 100%;
+        float: left;
+        margin-top: 40px;
+    }
+    .treatment_taital {
+        font-size: 29px;
+    }
+    .doctores_taital {
+        font-size: 30px;
+    }
+    .doctores_section {
+        border-radius: 20px;
+    }
+    #my_slider a.carousel-control-prev {
+        left: -90px;
+        top: 170px;
+        display: none;
+    }
+    #my_slider a.carousel-control-next {
+        right: -90px;
+        top: 170px;
+        display: none;
+    }
+    .testimonial_taital {
+        font-size: 30px;
+    }
+    #main_slider a.carousel-control-prev {
+        left: -110px;
+        top: 60px;
+        display: none;
+    }
+    #main_slider a.carousel-control-next {
+        right: -110px;
+        top: 60px;
+        display: none;
+    }
+    .box_main {
+        width: 100%;
+        padding: 40px 20px 40px 20px;
+    }
+    .contact_taital {
+        font-size: 30px;
+        padding-left: 0px;
+    }
+    .mail_section_1 {
+        padding-left: 0px;
+    }
+    .padding_left_15 {
+        padding: 0px;
+    }
+    .input_bt {
+        width: 100%;
+    }
+    .footer_taital {
+        margin-top: 20px;
+    }
+    .image_1 img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .header_section {
+        background-size: 100% 100%;
+    }
+    .navbar-expand-lg {
+        padding: 15px 0px;
+    }
+    .navbar-brand {
+        width: auto;
+        padding: 0px;
+    }
+    .navbar {
+        padding: 10px 0px;
+    }
+    .navbar-toggler {
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+    .navbar-nav.ml-auto {
+        display: block;
+    }
+    .header_top_section {
+        display: none;
+    }
+    .search_btn {
+        display: none;
+    }
+    .custom_menu li a {
+        display: none;
+    }
+    .banner_taital {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .banner_text {
+        width: 100%;
+    }
+    .appointment_box {
+        padding: 40px 20px;
+        top: -100px;
+    }
+    .appointment_taital {
+        font-size: 24px;
+    }
+    p.doctorname_text {
+        padding-top: 20px;
+    }
+    .about_taital {
+        font-size: 30px;
+        padding-top: 0;
+    }
+    .about_img img {
+        width: 100%;
+        float: left;
+        margin-top: 40px;
+    }
+    .image_1 img {
+        width: 100%;
+    }
+    .treatment_taital {
+        font-size: 29px;
+    }
+    .doctores_taital {
+        font-size: 30px;
+    }
+    .doctores_section {
+        border-radius: 20px;
+    }
+    #my_slider a.carousel-control-prev {
+        left: -90px;
+        top: 170px;
+        display: none;
+    }
+    #my_slider a.carousel-control-next {
+        right: -90px;
+        top: 170px;
+        display: none;
+    }
+    .testimonial_taital {
+        font-size: 30px;
+    }
+    #main_slider a.carousel-control-prev {
+        left: -110px;
+        top: 60px;
+        display: none;
+    }
+    #main_slider a.carousel-control-next {
+        right: -110px;
+        top: 60px;
+        display: none;
+    }
+    .box_main {
+        width: 100%;
+        padding: 40px 20px 40px 20px;
+    }
+    .contact_taital {
+        font-size: 30px;
+        padding-left: 0px;
+    }
+    .mail_section_1 {
+        padding-left: 0px;
+    }
+    .padding_left_15 {
+        padding: 0px;
+    }
+    .input_bt {
+        width: 100%;
+    }
+    .footer_taital {
+        margin-top: 20px;
+    }
+}
+
+/* doctores section end */
