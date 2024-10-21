@@ -168,7 +168,7 @@
     <!-- content -->
     <div class="info-container">
         <div class="pengumuman">
-            <h3 style="background-color: rgb(25, 25, 79); color: white; padding: 20px; border-radius: 5px; width: 100%;">
+            <h3 style="background-color: rgb(25, 25, 79); color: white; padding: 20px; border-radius: 5px; width: 90%; margin-right: 20%;">
                 Pengumuman
             </h3>
             <br>
@@ -705,19 +705,54 @@
     <br>
 
     <!-- prestasi -->
+    <style>
+        .carousel-control-prev, .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            width: 50px; /* Lebar tombol */
+            height: 50px; /* Tinggi tombol */
+            background-color: #070b10; /* Warna latar belakang */
+            border-radius: 50%; /* Membuat tombol bulat */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(32, 58, 224); /* Warna ikon */
+            font-size: 2rem; /* Ukuran ikon */
+            z-index: 1000; /* Menempatkan tombol di atas konten */
+            transform: translateY(-50%); /* Menyelaraskan vertikal */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer; /* Menampilkan kursor pointer */
+        }
+
+        #customPrevBtn2 {
+            left: -60px; /* Jarak tombol dari sisi kiri */
+            color: red;
+            background-color: #070b10;
+        }
+
+        #customNextBtn2 {
+            right: -60px; /* Jarak tombol dari sisi kanan */
+            color: red;
+        }
+
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            transform: translateY(-50%) scale(1.1); /* Efek hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+        }
+    </style>
     <div class="doctores_section margim_50">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="judul" style="color: black;">
-                        <h1>Prestasi</h1>
+                        <h1> Prestasi</h1>
                         <div class="underline" style="width: 100%; align-items: center;"></div>
                     </div>
                 </div>
             </div>
     
             <div class="doctores_section_2">
-                <div id="my_slider" class="carousel slide" data-ride="carousel">
+                <div id="prestasiCarousel2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <!-- First Slide -->
                         <div class="carousel-item active">
@@ -726,51 +761,46 @@
                                 <div class="col-md-4">
                                     <div class="doctores_box" style="cursor: pointer;">
                                         <div class="image_1">
-                                            <img src="assets/image/Picture.png" alt="Prestasi Image">
+                                            <img src="assets/image/Picture.png" alt="Achievement Image">
                                         </div>
                                         <br><br><br><br><br>
-                                        <p>Film kleru karya SMK N 1 SLAWI dan SMK N 2 ADIWERNA raih penghargaan pemeran
-                                            utama terpilih Kategori pelajar di festival film griff tingkat kekaresidenan
-                                            pekalongan
-                                        </p>
-                                        <h6 style="margin-right: 60%;">2 September 2024</h6>
+                                        <p>Prestasi luar biasa oleh siswa kelas XII Multimedia di ajang kompetisi animasi tingkat nasional.</p>
+                                        <h6 style="margin-right: 60%;">5 Oktober 2024</h6>
                                         <div class="icon-text">
                                             <i class="fas fa-user"></i>
-                                            <span>: XII PPLG</span>
+                                            <span>: XII Multimedia</span>
                                         </div>
                                     </div>
                                 </div>
+    
+                                <!-- Second Card -->
                                 <div class="col-md-4">
                                     <div class="doctores_box" style="cursor: pointer;">
                                         <div class="image_1">
-                                            <img src="assets/image/Picture.png" alt="Prestasi Image">
+                                            <img src="assets/image/Picture.png" alt="Achievement Image">
                                         </div>
                                         <br><br><br><br><br>
-                                        <p>Film kleru karya SMK N 1 SLAWI dan SMK N 2 ADIWERNA raih penghargaan pemeran
-                                            utama terpilih Kategori pelajar di festival film griff tingkat kekaresidenan
-                                            pekalongan
-                                        </p>
-                                        <h6 style="margin-right: 60%;">2 September 2024</h6>
+                                        <p>Siswa kelas XI PPLG meraih penghargaan dalam lomba programming tingkat provinsi.</p>
+                                        <h6 style="margin-right: 60%;">12 Oktober 2024</h6>
                                         <div class="icon-text">
                                             <i class="fas fa-user"></i>
-                                            <span>: XII PPLG</span>
+                                            <span>: XI PPLG</span>
                                         </div>
                                     </div>
                                 </div>
+    
+                                <!-- Third Card -->
                                 <div class="col-md-4">
                                     <div class="doctores_box" style="cursor: pointer;">
                                         <div class="image_1">
-                                            <img src="assets/image/Picture.png" alt="Prestasi Image">
+                                            <img src="assets/image/Picture.png" alt="Achievement Image">
                                         </div>
                                         <br><br><br><br><br>
-                                        <p>Film kleru karya SMK N 1 SLAWI dan SMK N 2 ADIWERNA raih penghargaan pemeran
-                                            utama terpilih Kategori pelajar di festival film griff tingkat kekaresidenan
-                                            pekalongan
-                                        </p>
-                                        <h6 style="margin-right: 60%;">2 September 2024</h6>
+                                        <p>Tim SMK N 1 SLAWI meraih penghargaan desain terbaik dalam kompetisi inovasi teknologi.</p>
+                                        <h6 style="margin-right: 60%;">25 Oktober 2024</h6>
                                         <div class="icon-text">
                                             <i class="fas fa-user"></i>
-                                            <span>: XII PPLG</span>
+                                            <span>: XII TKJ</span>
                                         </div>
                                     </div>
                                 </div>
@@ -780,112 +810,400 @@
                         <!-- Second Slide -->
                         <div class="carousel-item">
                             <div class="row">
+                                <!-- First Card -->
                                 <div class="col-md-4">
                                     <div class="doctores_box">
                                         <div class="image_1">
-                                            <img src="assets/image/silat.jpg" width="50%" height="50%">
+                                            <img src="assets/image/Picture.png" width="50%" height="50%">
                                         </div>
-                                        <br><br>
-                                        <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
+                                        <br><br><br><br><br>
+                                        <p>Siswa XI PPLG menang di kejuaraan silat nasional.</p>
+                                        <h6 style="margin-right: 60%;">10 November 2024</h6>
+                                        <div class="icon-text">
+                                            <i class="fas fa-user"></i>
+                                            <span>: XI PPLG</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- Tambahkan konten lain jika diperlukan -->
+                        
+                                <!-- Second Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/Picture.png" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <p>Tim basket SMK N 1 SLAWI meraih juara 1 di kompetisi basket antar sekolah se-Jawa Tengah.</p>
+                                        <h6 style="margin-right: 60%;">15 November 2024</h6>
+                                        <div class="icon-text">
+                                            <i class="fas fa-user"></i>
+                                            <span>: XII PJKR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Third Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/Picture.png" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <p>Siswa kelas XII IPA memenangkan penghargaan inovasi terbaik di Science Fair tingkat nasional.</p>
+                                        <h6 style="margin-right: 60%;">20 November 2024</h6>
+                                        <div class="icon-text">
+                                            <i class="fas fa-user"></i>
+                                            <span>: XII IPA</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-    
+                        
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Fourth Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/Picture.png" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <p>Tim robotik SMK N 1 SLAWI meraih juara 2 di kompetisi robotik nasional.</p>
+                                        <h6 style="margin-right: 60%;">25 November 2024</h6>
+                                        <div class="icon-text">
+                                            <i class="fas fa-user"></i>
+                                            <span>: XII TKR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Fifth Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/Picture.png" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <p>Tim debat bahasa Inggris memenangkan kompetisi debat tingkat provinsi.</p>
+                                        <h6 style="margin-right: 60%;">28 November 2024</h6>
+                                        <div class="icon-text">
+                                            <i class="fas fa-user"></i>
+                                            <span>: XI Bahasa</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Sixth Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/Picture.png" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <p>Siswa XII Seni Rupa memenangkan penghargaan seni lukis terbaik di Pekan Seni Nasional.</p>
+                                        <h6 style="margin-right: 60%;">30 November 2024</h6>
+                                        <div class="icon-text">
+                                            <i class="fas fa-user"></i>
+                                            <span>: XII Seni Rupa</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
     
                     <!-- Left and right controls with cursor pointer -->
-                    <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev" style="cursor: pointer;">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                    <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next" style="cursor: pointer;">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
+                   <!-- Carousel Controls -->
+                <a id="customPrevBtn2" class="carousel-control-prev" style="cursor: pointer; margin-right: 5%;">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a id="customNextBtn2" class="carousel-control-next" style="cursor: pointer; margin-left: 5%;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+
                 </div>
             </div>
         </div>
     </div>
-    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the second carousel element
+            var carousel2 = $('#prestasiCarousel2');
+        
+            // Handle custom previous button click
+            $('#customPrevBtn2').on('click', function() {
+                carousel2.carousel('prev');  // Trigger the previous slide
+            });
+        
+            // Handle custom next button click
+            $('#customNextBtn2').on('click', function() {
+                carousel2.carousel('next');  // Trigger the next slide
+            });
+        });
+        </script>
     <br>
 
     <br>
+    <!-- prestasiend -->
 
     <!-- guru dan staff -->
-    <div class="card-slider-container">
-        <div class="judul">
-        <h1 style="color: black;">Guru dan Tenaga Kependidikan</h1>
-            <div class="underline"></div>
-        </div>
-        <div class="card-slider1">
-            <div class="card-item1">
-                <img src="assets/image/Lutfah.png" alt="Image 1" />
-                <h3>Dra. Lutfah Barliana, M.Pd</h3>
-                <p>Kepala Sekolah</p>
-            </div>
-            <div class="card-item1">
-                <img src="assets/image/Lutfah.png" alt="Image 1" />
-                <h3>Dra. Lutfah Barliana, M.Pd</h3>
-                <p>Kepala Sekolah</p>
-            </div>
-            <div class="card-item1">
-                <img src="assets/image/Lutfah.png" alt="Image 1" />
-                <h3>Dra. Lutfah Barliana, M.Pd</h3>
-                <p>Kepala Sekolah</p>
-            </div>
-            <div class="card-item1">
-                <img src="assets/image/Lutfah.png" alt="Image 1" />
-                <h3>Dra. Lutfah Barliana, M.Pd</h3>
-                <p>Kepala Sekolah</p>
-            </div>
-            <!-- Tambahkan lebih banyak card-item di sini -->
-        </div>
-        <button class="slider-button left" onclick="slideLeft()">&#10094;</button>
-<button class="slider-button right" onclick="slideRight()">&#10095;</button>
+    <style>
+        .carousel-control-prev, .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            width: 50px; /* Lebar tombol */
+            height: 50px; /* Tinggi tombol */
+            background-color: #070b10; /* Warna latar belakang */
+            border-radius: 50%; /* Membuat tombol bulat */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(32, 58, 224); /* Warna ikon */
+            font-size: 2rem; /* Ukuran ikon */
+            z-index: 1000; /* Menempatkan tombol di atas konten */
+            transform: translateY(-50%); /* Menyelaraskan vertikal */
+            /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+            cursor: pointer; /* Menampilkan kursor pointer */
+        }
 
+        #customPrevBtn3 {
+            left: -60px; /* Jarak tombol dari sisi kiri */
+            color: red;
+            background-color: #070b10;
+        }
+
+        #customNextBtn3 {
+            right: -50px; /* Jarak tombol dari sisi kanan */
+            color: red;
+        }
+
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            transform: translateY(-50%) scale(1.1); /* Efek hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+        }
+        .doctores_box {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan kartu */
+    transition: transform 0.3s ease; /* Transisi saat hover */
+}
+
+.doctores_box:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.image_1 img {
+    display: block; /* Menghilangkan jarak di bawah gambar */
+}
+  /* Media Queries untuk responsif */
+    @media (max-width: 768px) {
+        .doctores_box {
+            width: 90%; /* Lebar card untuk perangkat kecil */
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            width: 40px; /* Lebar tombol untuk perangkat kecil */
+            height: 40px; /* Tinggi tombol untuk perangkat kecil */
+            font-size: 1.5rem; /* Ukuran ikon untuk perangkat kecil */
+        }
+
+        h5 {
+            font-size: 12px; /* Ukuran teks nama untuk perangkat kecil */
+        }
+    }
+
+    @media (max-width: 576px) {
+        .doctores_box {
+            width: 95%; /* Lebar card untuk perangkat sangat kecil */
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            width: 35px; /* Lebar tombol untuk perangkat sangat kecil */
+            height: 35px; /* Tinggi tombol untuk perangkat sangat kecil */
+            font-size: 1.3rem; /* Ukuran ikon untuk perangkat sangat kecil */
+        }
+
+        h5 {
+            font-size: 10px; /* Ukuran teks nama untuk perangkat sangat kecil */
+        }
+    }
+
+    </style>
+    <div class="doctores_section margim_50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="judul" style="color: black;">
+                        <h1> Guru dan Tenaga Kependidikan</h1>
+                        <div class="underline" style="width: 100%; align-items: center;"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="doctores_section_3">
+                <div id="prestasiCarousel3" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- First Slide -->
+                        <div class="carousel-item active">
+                            <div class="row" style="margin-left: 4%;">
+                                <!-- First Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box" style="cursor: pointer; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; width: 80%; position: relative;background-color: transparent;">
+                                        <div class="image_1" style="position: relative;">
+                                            <img src="assets/image/Lutfah.png" alt="Achievement Image" style="width: 100%; height: auto; display: block;">
+                                            <h5 style="position: absolute; top: 10px; left: 1px; color: white; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px; margin-top: 90%;">
+                                                Drs Lutfah Berliana, M.pd
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+    
+                                <!-- Second Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box" style="cursor: pointer; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; width: 80%; position: relative;background-color: white;">
+                                        <div class="image_1" style="position: relative;">
+                                            <img src="assets/image/Lutfah.png" alt="Achievement Image" style="width: 100%; height: auto; display: block;">
+                                            <h5 style="position: absolute; top: 10px; left: 1px; color: white; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px; margin-top: 90%;">
+                                                Drs Lutfah Berliana, M.pd
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Third Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box" style="cursor: pointer; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; width: 80%; position: relative;background-color: white;">
+                                        <div class="image_1" style="position: relative;">
+                                            <img src="assets/image/Lutfah.png" alt="Achievement Image" style="width: 100%; height: auto; display: block;">
+                                            <h5 style="position: absolute; top: 10px; left: 1px; color: white; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px; margin-top: 90%;">
+                                                Drs Lutfah Berliana, M.pd
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Second Slide -->
+                        <div class="carousel-item">
+                            <div class="row" style="margin-left: 4%;">
+                                <!-- First Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box" style="cursor: pointer; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; width: 80%; position: relative;background-color: white;">
+                                        <div class="image_1" style="position: relative;">
+                                            <img src="assets/image/Lutfah.png" alt="Achievement Image" style="width: 100%; height: auto; display: block;">
+                                            <h5 style="position: absolute; top: 10px; left: 1px; color: white; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px; margin-top: 90%;">
+                                                Drs Lutfah Berliana, M.pd
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Second Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box" style="cursor: pointer; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; width: 80%; position: relative;background-color: white;">
+                                        <div class="image_1" style="position: relative;">
+                                            <img src="assets/image/Lutfah.png" alt="Achievement Image" style="width: 100%; height: auto; display: block;">
+                                            <h5 style="position: absolute; top: 10px; left: 1px; color: white; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px; margin-top: 90%;">
+                                                Drs Lutfah Berliana, M.pd
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Third Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box" style="cursor: pointer; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; width: 80%; position: relative;background-color: white;">
+                                        <div class="image_1" style="position: relative;">
+                                            <img src="assets/image/Lutfah.png" alt="Achievement Image" style="width: 100%; height: auto; display: block;">
+                                            <h5 style="position: absolute; top: 10px; left: 1px; color: white; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px; margin-top: 90%;">
+                                                Drs Lutfah Berliana, M.pd
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <div class="row" style="margin-left: 4%;">
+                                <!-- Fourth Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box" style="cursor: pointer; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; width: 80%; position: relative;background-color: white;">
+                                        <div class="image_1" style="position: relative;">
+                                            <img src="assets/image/Lutfah.png" alt="Achievement Image" style="width: 100%; height: auto; display: block;">
+                                            <h5 style="position: absolute; top: 10px; left: 1px; color: white; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px; margin-top: 90%;">
+                                                Drs Lutfah Berliana, M.pd
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Fifth Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box" style="cursor: pointer; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; width: 80%; position: relative; background-color: white;">
+                                        <div class="image_1" style="position: relative;">
+                                            <img src="assets/image/Lutfah.png" alt="Achievement Image" style="width: 100%; height: auto; display: block;">
+                                            <h5 style="position: absolute; top: 10px; left: 1px; color: white; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px; margin-top: 90%;">
+                                                Drs Lutfah Berliana, M.pd
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Sixth Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box" style="cursor: pointer; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; width: 80%; position: relative;">
+                                        <div class="image_1" style="position: relative;">
+                                            <img src="assets/image/Lutfah.png" alt="Achievement Image" style="width: 100%; height: auto; display: block;">
+                                            <h5 style="position: absolute; top: 10px; left: 1px; color: white; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px; margin-top: 90%;">
+                                                Drs Lutfah Berliana, M.pd
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <!-- Left and right controls with cursor pointer -->
+                   <!-- Carousel Controls -->
+                <a id="customPrevBtn3" class="carousel-control-prev" style="cursor: pointer; margin-right: 5%; background-color: #070b10;">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a id="customNextBtn3" class="carousel-control-next" style="cursor: pointer; margin-left: 2%;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+
+                </div>
+            </div>
+        </div>
     </div>
     <script>
-
-const cardSlider = document.querySelector('.card-slider1');
-
-function slideLeft() {
-    cardSlider.scrollBy({ left: -200, behavior: 'smooth' });
-}
-
-function slideRight() {
-    cardSlider.scrollBy({ left: 200, behavior: 'smooth' });
-}
-
-// Autoplay: Menggeser otomatis setiap 3 detik
-// setInterval(() => {
-//     cardSlider.scrollBy({ left: 500, behavior: 'smooth' });
-// }, 3000);
-        $(document).ready(function(){
-    $('.card-slider-container').owlCarousel({
-        loop: true,
-        margin: 20,
-        nav: true,  // Tombol panah kiri/kanan tetap aktif
-        dots: none,  // Ini menonaktifkan dots slider di bawah
-        autoplay: true,
-        autoplayTimeout: 3000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
-});
-
-    </script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the second carousel element
+            var carousel2 = $('#prestasiCarousel3');
+        
+            // Handle custom previous button click
+            $('#customPrevBtn3').on('click', function() {
+                carousel2.carousel('prev');  // Trigger the previous slide
+            });
+        
+            // Handle custom next button click
+            $('#customNextBtn3').on('click', function() {
+                carousel2.carousel('next');  // Trigger the next slide
+            });
+        });
+        </script>
     
     <br>
     <br>
+
+    <!-- guru and staff end -->
       
 
 

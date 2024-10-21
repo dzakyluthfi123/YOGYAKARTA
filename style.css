@@ -2646,3 +2646,149 @@ ul li {
 }
 
 /* doctores section end */
+
+/* client section start */
+.client_section .heading_container {
+    margin-bottom: 30px;
+  }
+  
+  .client_section .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 15px;
+  }
+  
+  .client_section .box .img-box {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 115px;
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .client_section .box .img-box img {
+    border-radius: 100%;
+    border: 5px solid #ffbe33;
+    position: relative;
+  }
+  
+  .client_section .box .img-box::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbe33;
+    -webkit-transform: rotate(45deg) translateX(-50%);
+            transform: rotate(45deg) translateX(-50%);
+  }
+  
+  .client_section .box .detail-box {
+    background-color: #222831;
+    color: #ffffff;
+    padding: 25px 25px 15px 25px;
+    border-radius: 5px;
+  }
+  
+  .client_section .box .detail-box h6 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 15px 0 5px 0;
+  }
+  
+  .client_section .box .detail-box p {
+    margin-bottom: 0;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .client_section .owl-carousel .owl-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 45px;
+    padding: 0 15px;
+  }
+  
+  .client_section .owl-carousel .owl-nav .owl-prev,
+  .client_section .owl-carousel .owl-nav .owl-next {
+    width: 45px;
+    height: 45px;
+    background-color: #ffbe33;
+    color: #ffffff;
+    outline: none;
+    bottom: 0px;
+    font-size: 24px;
+    margin: 0 5px;
+    border-radius: 100%;
+  }
+  
+  /* client section end */
+
+/* Style for the previous button */
+.customPrevBtn2 {
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Move button slightly outside the carousel */
+    transform: translateY(-50%);
+    color: blue;
+    font-size: 2.5rem;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style for the next button */
+.customNextBtn2 {
+    position: absolute;
+    top: 50%;
+    right: -40px; /* Move button slightly outside the carousel */
+    transform: translateY(-50%);
+    color: blue;
+    font-size: 2.5rem;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects to make the buttons look stylish */
+.customPrevBtn2:hover, .customNextBtn2:hover {
+    transform: translateY(-50%) scale(1.2); /* Scale up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: blue;
+}
+
+/* Style for the icons inside the buttons */
+.customPrevBtn2 i, .customNextBtn2 i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Optional: Ensure the buttons have higher z-index to be above content */
+.carousel-control-prev, .carousel-control-next {
+    z-index: 1000;
+}
+
+  
