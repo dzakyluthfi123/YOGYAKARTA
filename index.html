@@ -407,299 +407,292 @@
         <br>
 
     <!-- Ekstrakurikuler -->
-   
+
+    <style>
+        .carousel-control-prev, .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            width: 50px; /* Lebar tombol */
+            height: 50px; /* Tinggi tombol */
+            background-color: #070b10; /* Warna latar belakang */
+            border-radius: 50%; /* Membuat tombol bulat */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(32, 58, 224); /* Warna ikon */
+            font-size: 2rem; /* Ukuran ikon */
+            z-index: 1000; /* Menempatkan tombol di atas konten */
+            transform: translateY(-50%); /* Menyelaraskan vertikal */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer; /* Menampilkan kursor pointer */
+        }
+
+        #customPrevBtn4 {
+            left: -60px; /* Jarak tombol dari sisi kiri */
+            color: red;
+            background-color: #070b10;
+        }
+
+        #customNextBtn4 {
+            right: -60px; /* Jarak tombol dari sisi kanan */
+            color: red;
+        }
+
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            transform: translateY(-50%) scale(1.1); /* Efek hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+        }
+        @media (max-width: 768px) {
+    .carousel-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-item {
+        display: none; /* Hide all items by default */
+    }
+
+    .carousel-item.active {
+        display: flex; /* Show only the active item */
+    }
+
+    .doctores_box {
+        width: 100%; /* Ensure full width */
+        padding: 15px; /* Add padding if necessary */
+    }
+}
+
+    </style>
     <div class="doctores_section margim_50">
         <div class="container">
-           <div class="row">
-              <div class="col-md-12">
-                <div class="judul" style="color: black;">
-                    <h1>Ekstrakurikuler</h1>
-                    <div class="underline" style="width: 100%; align-items: center;"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="judul" style="color: black;">
+                        <h1> Ekstrakurikuler</h1>
+                        <div class="underline" style="width: 100%; align-items: center;"></div>
+                    </div>
                 </div>
-                 <!-- <h1 class="doctores_taital" style="color: black;">Our doctores</h1> -->
-              </div>
-           </div>
-           <div class="doctores_section_2">
-              <div id="my_slider" class="carousel slide" data-ride="carousel">
-                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                       <div class="row">
-                          <div class="col-md-4">
-                             <div class="doctores_box">
-                                <div class="image_1"><img src="assets/image/jurnalistik.jpg"></div>
-                                <br>
-                                <br>
-                                <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                                <!-- <div class="social_icon">
-                                   <ul>
-                                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                   </ul>
-                                </div> -->
-                             </div>
-                          </div>
-                          <!-- card2 -->
-                          <div class="col-md-4">
-                             <div class="doctores_box">
-                                <div class="image_1"><img src="assets/image/basket.jpg" width="50%" height="50%"></div>
-                                <br>
-                                <br>
-                                <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                                <!-- <div class="social_icon">
-                                   <ul>
-                                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                   </ul>
-                                </div> -->
-                             </div>
-                          </div>
-                          <!-- card3 -->
-                          <div class="col-md-4">
-                            <div class="doctores_box">
-                               <div class="image_1"><img src="assets/image/keputrian 4.jpg" width="50%" height="50%"></div>
-                               <br>
-                               <br>
-                               <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                               <!-- <div class="social_icon">
-                                  <ul>
-                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                  </ul>
-                               </div> -->
+            </div>
+    
+            <div class="doctores_section_4">
+                <div id="prestasiCarousel4" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- First Slide -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <!-- First Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box" style="cursor: pointer;">
+                                        <div class="image_1">
+                                            <img src="assets/image/basket.jpg" alt="Achievement Image">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <H4>BASKETBALL</H4>
+                                        <p>Prestasi luar biasa oleh siswa kelas XII Multimedia di ajang kompetisi animasi tingkat nasional.<a href="basket.html">Read More</a></p>
+                                        <h6 style="margin-right: 60%;"></h6>
+                                    </div>
+                                </div>
+    
+                                <!-- Second Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box" style="cursor: pointer;">
+                                        <div class="image_1">
+                                            <img src="assets/image/jurnalistik.jpg" alt="Achievement Image">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <H4>JURNALISTIK</H4>
+                                        <p>Siswa kelas XI PPLG meraih penghargaan dalam lomba programming tingkat provinsi.<a href="jurnalistik.html">Read More</a></p>
+                                        <!-- <h6 style="margin-right: 60%;"><a href="">Read More</a></h6> -->
+                                       
+                                    </div>
+                                </div>
+    
+                                <!-- Third Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box" style="cursor: pointer;">
+                                        <div class="image_1">
+                                            <img src="assets/image/keputrian 4.jpg" alt="Achievement Image">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <H4>KEPUTRIAN</H4>
+                                        <p>Tim SMK N 1 SLAWI meraih penghargaan desain terbaik dalam kompetisi inovasi teknologi.<a href="keputrian.html">Read More</a></p>
+                                        <!-- <h6 style="margin-right: 60%;"><a href="keputrian.html">Read More</a></h6> -->
+                                       
+                                    </div>
+                                </div>
                             </div>
-                         </div>
+                        </div>
+    
+                        <!-- Second Slide -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- First Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/paskib 4.jpg" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <H4>PASKIBRA</H4>
+                                        <p>Siswa XI PPLG menang di kejuaraan silat nasional.<a href="paskibra.html">Read More</a></p>
+                                        <!-- <h6 style="margin-right: 60%;"><a href="paskibra.html">Read More</a></h6> -->
+                                       
+                                    </div>
+                                </div>
                         
-                          
+                                <!-- Second Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/pks1.jpg" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <H4>PKS</H4>
+                                        <p>Tim basket SMK N 1 SLAWI meraih juara 1 di kompetisi basket antar sekolah se-Jawa Tengah.<a href="pks.html">Read More</a></p>
+                                        <!-- <h6 style="margin-right: 60%;"><a href="pks.html">Read More</a></h6> -->
+                                      
+                                    </div>
+                                </div>
+                        
+                                <!-- Third Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/pmr.jpg" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <H4>PMR</H4>
+                                        <p>Siswa kelas XII IPA memenangkan penghargaan inovasi terbaik di Science Fair tingkat nasional.<a href="pmr.html">Read More</a></p>
+                                        <!-- <h6 style="margin-right: 60%;"><a href="pmr.html">Read More</a></h6> -->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Fourth Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/rohis.png" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <H4>ROHIS</H4>
+                                        <p>Tim robotik SMK N 1 SLAWI meraih juara 2 di kompetisi robotik nasional.<a href="rohis.html">Read More</a></p>
+                                        <!-- <h6 style="margin-right: 60%;"><a href="rohis.html">Read More</a></h6> -->
+                                        
+                                    </div>
+                                </div>
+                        
+                                <!-- Fifth Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/silat.jpg" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <H4>SILAT</H4>
+                                        <p>Tim debat bahasa Inggris memenangkan kompetisi debat tingkat provinsi.<a href="silat.html">Read More</a></p>
+                                        <!-- <h6 style="margin-right: 60%;"><a href="silat.html">Read More</a></h6> -->
+                                       
+                                    </div>
+                                </div>
+                        
+                                <!-- Sixth Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/voli.jpg" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <h4>VOLLEY BALL</h4>
+                                        <p>Siswa XII Seni Rupa memenangkan penghargaan seni lukis terbaik di Pekan Seni Nasional.<a href="voli.html">Read More</a></p>
+                                        <!-- <h6 style="margin-right: 60%;"><a href="voli.html">Read More</a></h6> -->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                       </div>
-                    </div>
-                    <div class="carousel-item">
-                       <div class="row">
-                        <div class="col-md-4">
-                            <div class="doctores_box">
-                               <div class="image_1"><img src="assets/image/paskib 4.jpg" width="50%" height="50%"></div>
-                               <br>
-                               <br>
-                               <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                               <!-- <div class="social_icon">
-                                  <ul>
-                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                  </ul>
-                               </div> -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Fourth Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/futsal" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <H4>FUTSAL</H4>
+                                        <p>Tim robotik SMK N 1 SLAWI meraih juara 2 di kompetisi robotik nasional.<a href="futsal.html">Read More</a></p>
+                                        <!-- <h6 style="margin-right: 60%;"><a href="rohis.html">Read More</a></h6> -->
+                                        
+                                    </div>
+                                </div>
+                        
+                                <!-- Fifth Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/silat.jpg" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <H4>SENI MUSIK</H4>
+                                        <p>Tim debat bahasa Inggris memenangkan kompetisi debat tingkat provinsi.<a href="senimusik.html">Read More</a></p>
+                                        <!-- <h6 style="margin-right: 60%;"><a href="silat.html">Read More</a></h6> -->
+                                       
+                                    </div>
+                                </div>
+                        
+                                <!-- Sixth Card -->
+                                <div class="col-md-4">
+                                    <div class="doctores_box">
+                                        <div class="image_1">
+                                            <img src="assets/image/voli.jpg" width="50%" height="50%">
+                                        </div>
+                                        <br><br><br><br><br>
+                                        <h4>SENI TARI</h4>
+                                        <p>Siswa XII Seni Rupa memenangkan penghargaan seni lukis terbaik di Pekan Seni Nasional.<a href="senitari.html">Read More</a></p>
+                                        <!-- <h6 style="margin-right: 60%;"><a href="voli.html">Read More</a></h6> -->
+                                        
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                         <!-- card2 -->
-                         <div class="col-md-4">
-                            <div class="doctores_box">
-                               <div class="image_1"><img src="assets/image/pks1.jpg" width="50%" height="50%"></div>
-                               <br>
-                               <br>
-                               <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                               <!-- <div class="social_icon">
-                                  <ul>
-                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                  </ul>
-                               </div> -->
-                            </div>
-                         </div>
-                         <!-- card3 -->
-                         <div class="col-md-4">
-                            <div class="doctores_box">
-                               <div class="image_1"><img src="assets/image/pmr.jpg" width="50%" height="50%"></div>
-                               <br>
-                               <br>
-                               <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                               <!-- <div class="social_icon">
-                                  <ul>
-                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                  </ul>
-                               </div> -->
-                            </div>
-                         </div>
-                       </div>
-                    </div>
-                    <div class="carousel-item">
-                       <div class="row">
-                        <div class="col-md-4">
-                            <div class="doctores_box">
-                               <div class="image_1"><img src="assets/image/rohis.png" width="50%" height="50%"></div>
-                               <br>
-                               <br>
-                               <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                               <!-- <div class="social_icon">
-                                  <ul>
-                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                  </ul>
-                               </div> -->
-                            </div>
-                         </div>
-                         <div class="col-md-4">
-                            <div class="doctores_box">
-                               <div class="image_1"><img src="assets/image/silat.jpg" width="50%" height="50%"></div>
-                               <br>
-                               <br>
-                               <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                               <!-- <div class="social_icon">
-                                  <ul>
-                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                  </ul>
-                               </div> -->
-                            </div>
-                         </div>
-                         <div class="col-md-4">
-                            <div class="doctores_box">
-                               <div class="image_1"><img src="assets/image/voli.jpg" width="50%" height="50%"></div>
-                               <br>
-                               <br>
-                               <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                               <!-- <div class="social_icon">
-                                  <ul>
-                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                  </ul>
-                               </div> -->
-                            </div>
-                         </div>
-                       </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                         <div class="col-md-4">
-                             <div class="doctores_box">
-                                <div class="image_1"><img src="assets/image/rohis.png" width="50%" height="50%"></div>
-                                <br>
-                                <br>
-                                <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                                <!-- <div class="social_icon">
-                                   <ul>
-                                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                   </ul>
-                                </div> -->
-                             </div>
-                          </div>
-                          <div class="col-md-4">
-                             <div class="doctores_box">
-                                <div class="image_1"><img src="assets/image/silat.jpg" width="50%" height="50%"></div>
-                                <br>
-                                <br>
-                                <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                                <!-- <div class="social_icon">
-                                   <ul>
-                                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                   </ul>
-                                </div> -->
-                             </div>
-                          </div>
-                          <div class="col-md-4">
-                             <div class="doctores_box">
-                                <div class="image_1"><img src="assets/image/voli.jpg" width="50%" height="50%"></div>
-                                <br>
-                                <br>
-                                <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                                <!-- <div class="social_icon">
-                                   <ul>
-                                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                   </ul>
-                                </div> -->
-                             </div>
-                          </div>
                         </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                         <div class="col-md-4">
-                             <div class="doctores_box">
-                                <div class="image_1"><img src="assets/image/rohis.png" width="50%" height="50%"></div>
-                                <br>
-                                <br>
-                                <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                                <!-- <div class="social_icon">
-                                   <ul>
-                                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                   </ul>
-                                </div> -->
-                             </div>
-                          </div>
-                          <div class="col-md-4">
-                             <div class="doctores_box">
-                                <div class="image_1"><img src="assets/image/silat.jpg" width="50%" height="50%"></div>
-                                <br>
-                                <br>
-                                <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                                <!-- <div class="social_icon">
-                                   <ul>
-                                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                   </ul>
-                                </div> -->
-                             </div>
-                          </div>
-                          <div class="col-md-4">
-                             <div class="doctores_box">
-                                <div class="image_1"><img src="assets/image/voli.jpg" width="50%" height="50%"></div>
-                                <br>
-                                <br>
-                                <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
-                                <!-- <div class="social_icon">
-                                   <ul>
-                                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                   </ul>
-                                </div> -->
-                             </div>
-                          </div>
-                        </div>
-                     </div>
-                 </div>
-                 <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-                 <i class="fa fa-angle-left"></i>
-                 </a>
-                 <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-                 <i class="fa fa-angle-right"></i>
-                 </a>
-              </div>
-           </div>
+                        
+                    </div>
+    
+                    <!-- Left and right controls with cursor pointer -->
+                   <!-- Carousel Controls -->
+                <a id="customPrevBtn4" class="carousel-control-prev" style="cursor: pointer; margin-right: 5%;">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a id="customNextBtn4" class="carousel-control-next" style="cursor: pointer; margin-left: 5%;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+
+                </div>
+            </div>
         </div>
-     </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the second carousel element
+            var carousel4 = $('#prestasiCarousel4');
+        
+            // Handle custom previous button click
+            $('#customPrevBtn4').on('click', function() {
+                carousel4.carousel('prev');  // Trigger the previous slide
+            });
+        
+            // Handle custom next button click
+            $('#customNextBtn4').on('click', function() {
+                carousel4.carousel('next');  // Trigger the next slide
+            });
+        });
+        </script>
     <br>
     <br>
     <br>
