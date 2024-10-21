@@ -407,277 +407,215 @@
         <br>
 
     <!-- Ekstrakurikuler -->
-
-    <style>
-        .carousel-control-prev, .carousel-control-next {
-            position: absolute;
-            top: 50%;
-            width: 50px; /* Lebar tombol */
-            height: 50px; /* Tinggi tombol */
-            background-color: #070b10; /* Warna latar belakang */
-            border-radius: 50%; /* Membuat tombol bulat */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgb(32, 58, 224); /* Warna ikon */
-            font-size: 2rem; /* Ukuran ikon */
-            z-index: 1000; /* Menempatkan tombol di atas konten */
-            transform: translateY(-50%); /* Menyelaraskan vertikal */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer; /* Menampilkan kursor pointer */
-        }
-
-        #customPrevBtn4 {
-            left: -60px; /* Jarak tombol dari sisi kiri */
-            color: red;
-            background-color: #070b10;
-        }
-
-        #customNextBtn4 {
-            right: -60px; /* Jarak tombol dari sisi kanan */
-            color: red;
-        }
-
-        .carousel-control-prev:hover, .carousel-control-next:hover {
-            transform: translateY(-50%) scale(1.1); /* Efek hover */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
-        }
-        @media (max-width: 768px) {
-    .carousel-inner {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .carousel-item {
-        display: none; /* Hide all items by default */
-    }
-
-    .carousel-item.active {
-        display: flex; /* Show only the active item */
-    }
-
-    .doctores_box {
-        width: 100%; /* Ensure full width */
-        padding: 15px; /* Add padding if necessary */
-    }
+     <style>
+        .card img {
+    height: 200px; /* Tinggi tetap untuk gambar card */
+    object-fit: cover; /* Mengatur gambar agar tidak terdistorsi */
 }
 
-    </style>
-    <div class="doctores_section margim_50">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="judul" style="color: black;">
-                        <h1> Ekstrakurikuler</h1>
-                        <div class="underline" style="width: 100%; align-items: center;"></div>
+.card {
+    cursor: pointer;
+    flex: 1; /* Membuat card mengisi ruang yang tersedia */
+}
+     </style>
+    <div class="judul" style="color: black;">
+        <h1>Ekstrakurikuler</h1>
+        <div class="underline"></div>
+    </div>
+     <br>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="d-flex">
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/basket.jpg" class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                            <h4 class="card-title">BASKETBALL</h4>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio minima laborum odio, asperiores quam at delectus laudantium dolore molestias distinctio molestiae sequi,
+                                 ducimus esse fugit officia eum? Totam, nihil?</p>
+                            <a href="basket.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/voli.jpg" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <h4 class="card-title">VOLLEY BALL</h4>
+                            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, corrupti quo delectus ipsam, optio ducimus vitae fugit temporibus ullam sapiente, perferendis voluptatum alias laboriosam. Aut totam et labore error deserunt.</P>
+                            <a href="voli.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/silat.jpg" class="card-img-top" alt="Card 3">
+                        <div class="card-body">
+                            <h4 class="card-title">SILAT</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequatur nam placeat tempore iure libero nobis illum inventore laborum quae deserunt a, dicta impedit sequi nemo voluptate cupiditate? Cum, impedit.</p>
+                            <a href="silat.html">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>
-    
-            <div class="doctores_section_4">
-                <div id="prestasiCarousel4" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- First Slide -->
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <!-- First Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box" style="cursor: pointer;">
-                                        <div class="image_1">
-                                            <img src="assets/image/basket.jpg" alt="Achievement Image">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <H4>BASKETBALL</H4>
-                                        <p>Prestasi luar biasa oleh siswa kelas XII Multimedia di ajang kompetisi animasi tingkat nasional.<a href="basket.html">Read More</a></p>
-                                        <h6 style="margin-right: 60%;"></h6>
-                                    </div>
-                                </div>
-    
-                                <!-- Second Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box" style="cursor: pointer;">
-                                        <div class="image_1">
-                                            <img src="assets/image/jurnalistik.jpg" alt="Achievement Image">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <H4>JURNALISTIK</H4>
-                                        <p>Siswa kelas XI PPLG meraih penghargaan dalam lomba programming tingkat provinsi.<a href="jurnalistik.html">Read More</a></p>
-                                        <!-- <h6 style="margin-right: 60%;"><a href="">Read More</a></h6> -->
-                                       
-                                    </div>
-                                </div>
-    
-                                <!-- Third Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box" style="cursor: pointer;">
-                                        <div class="image_1">
-                                            <img src="assets/image/keputrian 4.jpg" alt="Achievement Image">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <H4>KEPUTRIAN</H4>
-                                        <p>Tim SMK N 1 SLAWI meraih penghargaan desain terbaik dalam kompetisi inovasi teknologi.<a href="keputrian.html">Read More</a></p>
-                                        <!-- <h6 style="margin-right: 60%;"><a href="keputrian.html">Read More</a></h6> -->
-                                       
-                                    </div>
-                                </div>
-                            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex">
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/jurnalistik.jpg" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                            <h4 class="card-title">JURNALISTIK</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore voluptate, sapiente tempora cupiditate soluta quidem recusandae architecto magni maiores, iure ducimus dolores minus voluptas quibusdam animi et dignissimos maxime?</p>
+                            <a href="jurnalistik.html">Read More</a>
                         </div>
-    
-                        <!-- Second Slide -->
-                        <div class="carousel-item">
-                            <div class="row">
-                                <!-- First Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/paskib 4.jpg" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <H4>PASKIBRA</H4>
-                                        <p>Siswa XI PPLG menang di kejuaraan silat nasional.<a href="paskibra.html">Read More</a></p>
-                                        <!-- <h6 style="margin-right: 60%;"><a href="paskibra.html">Read More</a></h6> -->
-                                       
-                                    </div>
-                                </div>
-                        
-                                <!-- Second Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/pks1.jpg" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <H4>PKS</H4>
-                                        <p>Tim basket SMK N 1 SLAWI meraih juara 1 di kompetisi basket antar sekolah se-Jawa Tengah.<a href="pks.html">Read More</a></p>
-                                        <!-- <h6 style="margin-right: 60%;"><a href="pks.html">Read More</a></h6> -->
-                                      
-                                    </div>
-                                </div>
-                        
-                                <!-- Third Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/pmr.jpg" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <H4>PMR</H4>
-                                        <p>Siswa kelas XII IPA memenangkan penghargaan inovasi terbaik di Science Fair tingkat nasional.<a href="pmr.html">Read More</a></p>
-                                        <!-- <h6 style="margin-right: 60%;"><a href="pmr.html">Read More</a></h6> -->
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="carousel-item">
-                            <div class="row">
-                                <!-- Fourth Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/rohis.png" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <H4>ROHIS</H4>
-                                        <p>Tim robotik SMK N 1 SLAWI meraih juara 2 di kompetisi robotik nasional.<a href="rohis.html">Read More</a></p>
-                                        <!-- <h6 style="margin-right: 60%;"><a href="rohis.html">Read More</a></h6> -->
-                                        
-                                    </div>
-                                </div>
-                        
-                                <!-- Fifth Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/silat.jpg" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <H4>SILAT</H4>
-                                        <p>Tim debat bahasa Inggris memenangkan kompetisi debat tingkat provinsi.<a href="silat.html">Read More</a></p>
-                                        <!-- <h6 style="margin-right: 60%;"><a href="silat.html">Read More</a></h6> -->
-                                       
-                                    </div>
-                                </div>
-                        
-                                <!-- Sixth Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/voli.jpg" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <h4>VOLLEY BALL</h4>
-                                        <p>Siswa XII Seni Rupa memenangkan penghargaan seni lukis terbaik di Pekan Seni Nasional.<a href="voli.html">Read More</a></p>
-                                        <!-- <h6 style="margin-right: 60%;"><a href="voli.html">Read More</a></h6> -->
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="row">
-                                <!-- Fourth Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/futsal" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <H4>FUTSAL</H4>
-                                        <p>Tim robotik SMK N 1 SLAWI meraih juara 2 di kompetisi robotik nasional.<a href="futsal.html">Read More</a></p>
-                                        <!-- <h6 style="margin-right: 60%;"><a href="rohis.html">Read More</a></h6> -->
-                                        
-                                    </div>
-                                </div>
-                        
-                                <!-- Fifth Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/silat.jpg" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <H4>SENI MUSIK</H4>
-                                        <p>Tim debat bahasa Inggris memenangkan kompetisi debat tingkat provinsi.<a href="senimusik.html">Read More</a></p>
-                                        <!-- <h6 style="margin-right: 60%;"><a href="silat.html">Read More</a></h6> -->
-                                       
-                                    </div>
-                                </div>
-                        
-                                <!-- Sixth Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/voli.jpg" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <h4>SENI TARI</h4>
-                                        <p>Siswa XII Seni Rupa memenangkan penghargaan seni lukis terbaik di Pekan Seni Nasional.<a href="senitari.html">Read More</a></p>
-                                        <!-- <h6 style="margin-right: 60%;"><a href="voli.html">Read More</a></h6> -->
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
                     </div>
-    
-                    <!-- Left and right controls with cursor pointer -->
-                   <!-- Carousel Controls -->
-                <a id="customPrevBtn4" class="carousel-control-prev" style="cursor: pointer; margin-right: 5%;">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                <a id="customNextBtn4" class="carousel-control-next" style="cursor: pointer; margin-left: 5%;">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/keputrian 4.jpg" class="card-img-top" alt="Card 5">
+                        <div class="card-body">
+                            <h4 class="card-title">KEPUTRIAN</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ducimus impedit sunt assumenda facilis eligendi laboriosam enim optio voluptate! Debitis maxime beatae sapiente placeat perferendis. Nobis quos atque nihil numquam!
+                            </p>
+                            <a href="keputrian.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/pmr.jpg" class="card-img-top" alt="Card 6">
+                        <div class="card-body">
+                            <h4 class="card-title">PMR</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aut, aliquid eum enim dicta magnam. Officia, porro? Ad porro accusantium dolore sapiente, perspiciatis corrupti dicta ratione ducimus, repudiandae minima commodi.</p>
+                            <a href="pmr.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex">
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                            <h4 class="card-title">ENGLISH CLUB</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore voluptate, sapiente tempora cupiditate soluta quidem recusandae architecto magni maiores, iure ducimus dolores minus voluptas quibusdam animi et dignissimos maxime?</p>
+                            <a href="englishclub.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/FUT" class="card-img-top" alt="Card 5">
+                        <div class="card-body">
+                            <h4 class="card-title">FUTSAL</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ducimus impedit sunt assumenda facilis eligendi laboriosam enim optio voluptate! Debitis maxime beatae sapiente placeat perferendis. Nobis quos atque nihil numquam!
+                            </p>
+                            <a href="futsal.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/pmr.jpg" class="card-img-top" alt="Card 6">
+                        <div class="card-body">
+                            <h4 class="card-title">KARATE</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aut, aliquid eum enim dicta magnam. Officia, porro? Ad porro accusantium dolore sapiente, perspiciatis corrupti dicta ratione ducimus, repudiandae minima commodi.</p>
+                            <a href="karate.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex">
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/rohis.png" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                            <h4 class="card-title">ROHIS</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore voluptate, sapiente tempora cupiditate soluta quidem recusandae architecto magni maiores, iure ducimus dolores minus voluptas quibusdam animi et dignissimos maxime?</p>
+                            <a href="rohis.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/FUT" class="card-img-top" alt="Card 5">
+                        <div class="card-body">
+                            <h4 class="card-title">ROBOTIK</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ducimus impedit sunt assumenda facilis eligendi laboriosam enim optio voluptate! Debitis maxime beatae sapiente placeat perferendis. Nobis quos atque nihil numquam!
+                            </p>
+                            <a href="robotik.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/pmr.jpg" class="card-img-top" alt="Card 6">
+                        <div class="card-body">
+                            <h4 class="card-title">SBQ</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aut, aliquid eum enim dicta magnam. Officia, porro? Ad porro accusantium dolore sapiente, perspiciatis corrupti dicta ratione ducimus, repudiandae minima commodi.</p>
+                            <a href="sbq.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex">
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                            <h4 class="card-title">SENI MUSIK</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore voluptate, sapiente tempora cupiditate soluta quidem recusandae architecto magni maiores, iure ducimus dolores minus voluptas quibusdam animi et dignissimos maxime?</p>
+                            <a href="senimusik.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/FUT" class="card-img-top" alt="Card 5">
+                        <div class="card-body">
+                            <h4 class="card-title">SENI TARI</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ducimus impedit sunt assumenda facilis eligendi laboriosam enim optio voluptate! Debitis maxime beatae sapiente placeat perferendis. Nobis quos atque nihil numquam!
+                            </p>
+                            <a href="senitari.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/pmr.jpg" class="card-img-top" alt="Card 6">
+                        <div class="card-body">
+                            <h4 class="card-title">TENIS MEJA</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aut, aliquid eum enim dicta magnam. Officia, porro? Ad porro accusantium dolore sapiente, perspiciatis corrupti dicta ratione ducimus, repudiandae minima commodi.</p>
+                            <a href="tenismeja.html">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Get the second carousel element
             var carousel4 = $('#prestasiCarousel4');
@@ -692,253 +630,357 @@
                 carousel4.carousel('next');  // Trigger the next slide
             });
         });
-        </script>
+        </script> -->
     <br>
     <br>
     <br>
 
     <!-- prestasi -->
+
     <style>
-        .carousel-control-prev, .carousel-control-next {
-            position: absolute;
-            top: 50%;
-            width: 50px; /* Lebar tombol */
-            height: 50px; /* Tinggi tombol */
-            background-color: #070b10; /* Warna latar belakang */
-            border-radius: 50%; /* Membuat tombol bulat */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgb(32, 58, 224); /* Warna ikon */
-            font-size: 2rem; /* Ukuran ikon */
-            z-index: 1000; /* Menempatkan tombol di atas konten */
-            transform: translateY(-50%); /* Menyelaraskan vertikal */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer; /* Menampilkan kursor pointer */
-        }
+        .card img {
+    height: 200px; /* Tinggi tetap untuk gambar card */
+    object-fit: cover; /* Mengatur gambar agar tidak terdistorsi */
+}
 
-        #customPrevBtn2 {
-            left: -60px; /* Jarak tombol dari sisi kiri */
-            color: red;
-            background-color: #070b10;
-        }
+.card {
+    cursor: pointer;
+    flex: 1; /* Membuat card mengisi ruang yang tersedia */
+}
+     </style>
+    <div class="judul" style="color: black;">
+        <h1>Prestasi</h1>
+        <div class="underline"></div>
+    </div>
+     <br>
 
-        #customNextBtn2 {
-            right: -60px; /* Jarak tombol dari sisi kanan */
-            color: red;
-        }
-
-        .carousel-control-prev:hover, .carousel-control-next:hover {
-            transform: translateY(-50%) scale(1.1); /* Efek hover */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
-        }
-    </style>
-    <div class="doctores_section margim_50">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="judul" style="color: black;">
-                        <h1> Prestasi</h1>
-                        <div class="underline" style="width: 100%; align-items: center;"></div>
+<div id="carouselExampleControls1" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner" id="prestasi">
+        <div class="carousel-item active">
+            <div class="d-flex">
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/Picture.png" class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                            <!-- <h4 class="card-title">BASKETBALL</h4> -->
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                             <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                            <!-- <a href="basket.html">Read More</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/voli.jpg" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/silat.jpg" class="card-img-top" alt="Card 3">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-    
-            <div class="doctores_section_2">
-                <div id="prestasiCarousel2" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- First Slide -->
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <!-- First Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box" style="cursor: pointer;">
-                                        <div class="image_1">
-                                            <img src="assets/image/Picture.png" alt="Achievement Image">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <p>Prestasi luar biasa oleh siswa kelas XII Multimedia di ajang kompetisi animasi tingkat nasional.</p>
-                                        <h6 style="margin-right: 60%;">5 Oktober 2024</h6>
-                                        <div class="icon-text">
-                                            <i class="fas fa-user"></i>
-                                            <span>: XII Multimedia</span>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- Second Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box" style="cursor: pointer;">
-                                        <div class="image_1">
-                                            <img src="assets/image/Picture.png" alt="Achievement Image">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <p>Siswa kelas XI PPLG meraih penghargaan dalam lomba programming tingkat provinsi.</p>
-                                        <h6 style="margin-right: 60%;">12 Oktober 2024</h6>
-                                        <div class="icon-text">
-                                            <i class="fas fa-user"></i>
-                                            <span>: XI PPLG</span>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- Third Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box" style="cursor: pointer;">
-                                        <div class="image_1">
-                                            <img src="assets/image/Picture.png" alt="Achievement Image">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <p>Tim SMK N 1 SLAWI meraih penghargaan desain terbaik dalam kompetisi inovasi teknologi.</p>
-                                        <h6 style="margin-right: 60%;">25 Oktober 2024</h6>
-                                        <div class="icon-text">
-                                            <i class="fas fa-user"></i>
-                                            <span>: XII TKJ</span>
-                                        </div>
-                                    </div>
-                                </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex">
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/jurnalistik.jpg" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
                             </div>
                         </div>
-    
-                        <!-- Second Slide -->
-                        <div class="carousel-item">
-                            <div class="row">
-                                <!-- First Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/Picture.png" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <p>Siswa XI PPLG menang di kejuaraan silat nasional.</p>
-                                        <h6 style="margin-right: 60%;">10 November 2024</h6>
-                                        <div class="icon-text">
-                                            <i class="fas fa-user"></i>
-                                            <span>: XI PPLG</span>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Second Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/Picture.png" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <p>Tim basket SMK N 1 SLAWI meraih juara 1 di kompetisi basket antar sekolah se-Jawa Tengah.</p>
-                                        <h6 style="margin-right: 60%;">15 November 2024</h6>
-                                        <div class="icon-text">
-                                            <i class="fas fa-user"></i>
-                                            <span>: XII PJKR</span>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Third Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/Picture.png" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <p>Siswa kelas XII IPA memenangkan penghargaan inovasi terbaik di Science Fair tingkat nasional.</p>
-                                        <h6 style="margin-right: 60%;">20 November 2024</h6>
-                                        <div class="icon-text">
-                                            <i class="fas fa-user"></i>
-                                            <span>: XII IPA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="carousel-item">
-                            <div class="row">
-                                <!-- Fourth Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/Picture.png" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <p>Tim robotik SMK N 1 SLAWI meraih juara 2 di kompetisi robotik nasional.</p>
-                                        <h6 style="margin-right: 60%;">25 November 2024</h6>
-                                        <div class="icon-text">
-                                            <i class="fas fa-user"></i>
-                                            <span>: XII TKR</span>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Fifth Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/Picture.png" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <p>Tim debat bahasa Inggris memenangkan kompetisi debat tingkat provinsi.</p>
-                                        <h6 style="margin-right: 60%;">28 November 2024</h6>
-                                        <div class="icon-text">
-                                            <i class="fas fa-user"></i>
-                                            <span>: XI Bahasa</span>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Sixth Card -->
-                                <div class="col-md-4">
-                                    <div class="doctores_box">
-                                        <div class="image_1">
-                                            <img src="assets/image/Picture.png" width="50%" height="50%">
-                                        </div>
-                                        <br><br><br><br><br>
-                                        <p>Siswa XII Seni Rupa memenangkan penghargaan seni lukis terbaik di Pekan Seni Nasional.</p>
-                                        <h6 style="margin-right: 60%;">30 November 2024</h6>
-                                        <div class="icon-text">
-                                            <i class="fas fa-user"></i>
-                                            <span>: XII Seni Rupa</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
                     </div>
-    
-                    <!-- Left and right controls with cursor pointer -->
-                   <!-- Carousel Controls -->
-                <a id="customPrevBtn2" class="carousel-control-prev" style="cursor: pointer; margin-right: 5%;">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                <a id="customNextBtn2" class="carousel-control-next" style="cursor: pointer; margin-left: 5%;">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/keputrian 4.jpg" class="card-img-top" alt="Card 5">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/pmr.jpg" class="card-img-top" alt="Card 6">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex">
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/FUT" class="card-img-top" alt="Card 5">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/pmr.jpg" class="card-img-top" alt="Card 6">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex">
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/rohis.png" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/FUT" class="card-img-top" alt="Card 5">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/pmr.jpg" class="card-img-top" alt="Card 6">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex">
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/FUT" class="card-img-top" alt="Card 5">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card">
+                        <img src="assets/image/pmr.jpg" class="card-img-top" alt="Card 6">
+                        <div class="card-body">
+                            <p>Film kleru karya SMK N 1 SLAWI dan SMK N 
+                                2 ADIWERNAraih penghargaan pemeran 
+                                utama terpilih Kategori pelajar 
+                                di festival film griff tingkat kekaresidenan 
+                                pekalongan</p>
+            
+                            <h6 style="margin-right: 50%;">2 September 2024</h6>
+            
+                            <div class="icon-text">
+                                <i class="fas fa-user"></i> <!-- Ikon user -->
+                                <span>: XII PPLG</span> <!-- Teks disamping ikon -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Get the second carousel element
-            var carousel2 = $('#prestasiCarousel2');
-        
-            // Handle custom previous button click
-            $('#customPrevBtn2').on('click', function() {
-                carousel2.carousel('prev');  // Trigger the previous slide
-            });
-        
-            // Handle custom next button click
-            $('#customNextBtn2').on('click', function() {
-                carousel2.carousel('next');  // Trigger the next slide
-            });
-        });
-        </script>
-    <br>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
-    <br>
+<br>
+<br>
+
+
+
+
+
     <!-- prestasiend -->
 
     <!-- guru dan staff -->
