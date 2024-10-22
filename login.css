@@ -8,7 +8,8 @@
 /* Body styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: rgb(35, 35, 184);
+    /* background-color: rgb(35, 35, 184); */
+    background-image: url(assets/image/pp\ smk3.jpg);
     display: flex;
     justify-content: center;
     align-items: center;

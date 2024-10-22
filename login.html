@@ -51,33 +51,32 @@
                                 <div class="mb-3">
                                     <label for="username" class="form-label">Username</label>
                                     <br>
-                                    <input name="username" class="form-control" type="text" id="username"
-                                        required="" placeholder="Enter your username">
+                                    <input name="username" class="form-control" type="text" id="username" required="" placeholder="Enter your username">
                                 </div>
-
+                            
                                 <div class="mb-3">
                                     <label for="password" class="form-label">Password</label>
                                     <br>
-                                    <input name="password" class="form-control" type="password" id="password"
-                                        required="" placeholder="Enter your password">
+                                    <input name="password" class="form-control" type="password" id="password" required="" placeholder="Enter your password">
                                 </div>
-
+                            
                                 <div class="mb-3">
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="checkbox-signin" checked>
-                                        <label class="form-check-label" for="checkbox-signin">Remember me</label>
+                                        <input type="checkbox" class="form-check-input" id="checkbox-signin" onclick="togglePassword()">
+                                        <label class="form-check-label" for="checkbox-signin">Show Password</label>
                                     </div>
                                 </div>
                                 <br>
                                 <div class="mb-3 d-grid text-center">
-                                    <button class="btn btn-primary" type="submit"> Log In </button>
+                                    <button class="btn btn-primary" type="submit">Log In</button>
                                 </div>
                             </form>
+                            
                             <br>
 
                             <!-- Register link -->
                             <p class="text-center">Don't Have an Account?
-                                <a href="register.html" class="text-muted ms-1"><b>Register</b></a>
+                                <!-- <a href="register.html" class="text-muted ms-1"><b>Register</b></a> -->
                             </p>
                         </div> <!-- end card-body -->
                     </div> <!-- end card -->
@@ -95,6 +94,18 @@
             </div> <!-- end row -->
         </div> <!-- end container -->
     </div> <!-- end page -->
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+    
 
     <!-- Vendor js -->
     <script src="assets/bootstrap/js/vendor.min.js"></script>
