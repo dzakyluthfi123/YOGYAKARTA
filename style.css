@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
-
-body {
+ body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -93,7 +94,7 @@ header {
     background-color: #a0a6ab; /* Warna latar belakang untuk marquee */
     padding: 0; /* Set padding to 0 to reduce height */
     height: 40px; /* Set a specific height for the marquee */
-    width: 100%;
+    width: 101%;
     /* max-width: 800px; Ganti dengan lebar maksimum yang diinginkan */
     margin: 0 auto; /* Center the marquee section */
     overflow: hidden; /* Optional: Prevent overflow */
@@ -300,7 +301,7 @@ header {
 }
 
 .home img {
-    width: 100%; /* Memastikan gambar responsif */
+    width: 101%; /* Memastikan gambar responsif */
     /* height: auto; Menjaga aspek rasio gambar */
     margin-bottom: -5px;
 }
