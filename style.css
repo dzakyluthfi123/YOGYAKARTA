@@ -441,7 +441,7 @@ p {
 }
 
 .berita-section {
-    background-color: rgb(12, 12, 97); /* Blue background */
+    background-color: rgb(69, 69, 228); /* Blue background */
     color: white; /* White text color */
     padding: 50px 50px;
     border-radius: 10px; /* Optional: Rounded corners */
@@ -949,7 +949,7 @@ textarea.form-control {
 
 .content {
     padding: 50px 0;
-    background-color: #f9f9f9; /* Warna latar belakang */
+    /* background-color: #f9f9f9; */
 }
 
 .featured {
