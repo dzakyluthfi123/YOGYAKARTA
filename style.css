@@ -1307,10 +1307,10 @@ label {
     display: flex;
     align-items: center; /* Untuk menyelaraskan secara vertikal */
     gap: 3px; /* Jarak antar elemen */
-    background-color: #686666; /* Warna latar belakang abu-abu */
+    background-color: #f0efefdd; /* Warna latar belakang abu-abu */
     padding: 5px; /* Memberikan ruang di dalam kontainer */
     border-radius: 5px; /* Opsional: untuk membuat sudut yang melengkung */
-    color: rgb(255, 255, 255);
+    color: black;
     width: 90%;
     margin-left: 5%;
     /* justify-content: center; */
